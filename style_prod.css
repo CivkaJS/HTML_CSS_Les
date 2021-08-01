@@ -51,6 +51,7 @@
 
 .box_product_select {
     position: relative;
+    margin-bottom: 18px;
 }
 
 .category_product_select,
@@ -71,11 +72,6 @@
     text-transform: uppercase;
     list-style-type: none;
     padding-left: 17px;
-}
-
-.button_product_selec::after {
-    content: '\25B6';
-    padding-right: 0.5em;
 }
 
 .product_select_line {
