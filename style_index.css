@@ -95,6 +95,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    top: 55px;
 }
 
 .Brouse_catalog {
@@ -191,7 +192,13 @@
     border-top: 1px solid #e8e8e8;
 }
 
-.browes {}
+.browes {
+    left: 35px;
+}
+
+.accouunt {
+    left: 20px;
+}
 
 .Women {
     left: 190px;
@@ -661,6 +668,10 @@
     margin-bottom: 35px;
 }
 
+.submit_input_form {
+    position: relative;
+}
+
 .Line_submit {
     width: 334px;
     height: 46px;
@@ -670,9 +681,11 @@
 
 .submit_button {
     width: 104px;
-    height: 46px;
+    height: 50px;
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
+    position: absolute;
+    right: 0px;
 }
 
 .footer {
