@@ -145,6 +145,30 @@
     right: 5px;
 }
 
+Box_form_cash_items {}
+
+.cash_items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Name_cash_items {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.num_cash_items {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 .categories {
     height: 51px;
     display: flex;
