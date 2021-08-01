@@ -1,0 +1,18 @@
+/* CSS info_bonus_bgc */
+
+.info_bonus_bgc {
+    background-color: #222224;
+}
+
+.info_bonus_prod {
+    height: 341px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.free_delivery_info_prod,
+.sales_discount_info_prod,
+.quality_assurance_info_prod {
+    dislpay: flex;
+}
