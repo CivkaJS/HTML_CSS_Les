@@ -184,6 +184,7 @@
     font-weight: 400;
     line-height: 26px;
     text-align: left;
+    position: absolute;
 }
 
 .sort_list_info {
@@ -194,6 +195,10 @@
     line-height: 26px;
     text-align: left;
     width: 68px;
+}
+
+.box_sort_list {
+    position: absolute;
 }
 
 .index_button_show {}
