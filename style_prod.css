@@ -113,7 +113,9 @@
     margin-top: 71px;
 }
 
-.config_serch {}
+.config_serch {
+    display: flex;
+}
 
 .tranding_now {
     width: 176px;
@@ -129,6 +131,14 @@
 .link_tranding_now {
     text-decoration: none;
 }
+
+.size {
+    margin-left: 114px;
+}
+
+.checkbox_size {}
+
+.checkbox_form {}
 
 
 /* CSS info_bonus_bgc */
