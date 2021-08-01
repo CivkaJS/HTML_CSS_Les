@@ -134,9 +134,13 @@
 
 .size {
     margin-left: 114px;
+    width: 210px;
 }
 
-.checkbox_size {}
+.checkbox_size {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .checkbox_form {}
 
