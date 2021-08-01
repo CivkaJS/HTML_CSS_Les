@@ -14,5 +14,29 @@
 .free_delivery_info_prod,
 .sales_discount_info_prod,
 .quality_assurance_info_prod {
-    dislpay: flex;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 341px;
+}
+
+.box_info_bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bonus_info_bottom_prod {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.35px;
+    margin-top: 21px;
+}
+
+.img_info_bonus_prod {
+    margin-bottom: 23px;
 }
