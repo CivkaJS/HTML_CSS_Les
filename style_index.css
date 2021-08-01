@@ -144,6 +144,7 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    position: relative;
 }
 
 .link {
@@ -153,7 +154,6 @@
 .catalog_list {
     list-style-type: none;
     padding: 15px;
-    position: relative;
 }
 
 .catalog_list:hover {
@@ -170,14 +170,14 @@
     height: 310px;
     padding-left: 25px;
     top: 45px;
-    left: -60px;
+    left: 90px;
 }
 
 .catalog_list:hover .catalog_box {
     display: flex;
 }
 
-.catalog_box:before {
+.indicator {
     content: "";
     display: block;
     height: 12px;
@@ -186,9 +186,31 @@
     position: absolute;
     transform: rotate(45deg);
     top: -7px;
-    left: 85px;
+    left: 60px;
     border-left: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
+}
+
+.browes {}
+
+.Women {
+    left: 190px;
+}
+
+.Kids {
+    left: 320px;
+}
+
+.Accoseriese {
+    left: 460px;
+}
+
+.Featured {
+    left: 615px;
+}
+
+.Hot_Deal {
+    left: 765px;
 }
 
 .Catalog_items {
