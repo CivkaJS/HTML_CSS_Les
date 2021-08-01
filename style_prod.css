@@ -197,8 +197,14 @@
     width: 68px;
 }
 
-.box_sort_list {
+.Box_sort_list {
     position: absolute;
+    width: 61px;
+    background-color: white;
+    padding-left: 20px;
+    list-style-type: none;
+    left: 2px;
+    top: 35px;
 }
 
 .index_button_show {}
