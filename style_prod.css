@@ -161,7 +161,28 @@
     height: 50px;
     margin-top: 43px;
     margin-bottom: 48px;
+    display: flex;
+    align-items: center;
 }
+
+.sort_list_form {
+    display: flex;
+    width: 153px;
+    height: 30px;
+    background-color: white;
+    margin-left: 9px;
+}
+
+.sort_list_button {
+    display: flex;
+    align-items: center;
+    width: 86px;
+    justify-content: center;
+}
+
+.sort_list_info {}
+
+.index_button_show {}
 
 
 /* CSS info_bonus_bgc */
