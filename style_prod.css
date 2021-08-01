@@ -48,6 +48,8 @@
 
 /* Menu_product_select */
 
+.product_select_form {}
+
 .menu_product_select {
     width: 243px;
     display: flex;
