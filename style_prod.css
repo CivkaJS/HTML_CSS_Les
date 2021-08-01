@@ -1,5 +1,33 @@
 /* CSS info_bonus_bgc */
 
+.bread_crumbs_bgc {
+    background-color: #f8f3f4;
+}
+
+.bread_crumbs {
+    height: 148px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bread_crumbs_head {
+    color: #f16d7f;
+    font-family: "Lato - Black";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.brad_crumbs_map {
+    display: flex;
+}
+
+
+/* CSS info_bonus_bgc */
+
 .info_bonus_bgc {
     background-color: #222224;
 }
