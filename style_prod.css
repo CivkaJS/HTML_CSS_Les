@@ -134,15 +134,18 @@
 
 .size {
     margin-left: 114px;
-    width: 210px;
+    width: 285px;
 }
 
 .checkbox_size {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 26px;
 }
 
-.checkbox_form {}
+.checkbox_form {
+    margin-right: 23px;
+}
 
 
 /* CSS info_bonus_bgc */
