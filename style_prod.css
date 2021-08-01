@@ -206,10 +206,15 @@
         margin-right: 31px;
     }
     
-    .Cash_items_prod:nth-last-child(3),
-    .Cash_items_prod:nth-last-child(6),
-    .Cash_items_prod:nth-last-child(9) {
+    .Cash_items_prod:nth-child(3),
+    .Cash_items_prod:nth-child(6),
+    .Cash_items_prod:nth-child(9) {
         margin-right: 0px;
+    }
+    
+    .Cash_items_prod:nth-child(4),
+    .Cash_items_prod:nth-child(6) {
+        width: 263px;
     }
     /* CSS info_bonus_bgc */
     
