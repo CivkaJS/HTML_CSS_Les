@@ -125,7 +125,9 @@
     justify-content: space-between;
 }
 
-.link_tranding_now {}
+.link_tranding_now {
+    text-decoration: none;
+}
 
 
 /* CSS info_bonus_bgc */
