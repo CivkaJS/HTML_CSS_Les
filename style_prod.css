@@ -9,6 +9,7 @@
     width: 1140px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .bread_crumbs_head {
@@ -23,6 +24,17 @@
 
 .brad_crumbs_map {
     display: flex;
+}
+
+.style_link_bread_crumbs {
+    color: #636363;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
