@@ -161,11 +161,9 @@
     width: 279px;
 }
 
-
-/* .search_icon {
-    border: 1px solid #e6e6e6;
+.search_icon_form {
     width: 38px;
-} */
+}
 
 .Store_box {
     position: absolute;
@@ -241,10 +239,6 @@
 .catalog_list {
     list-style-type: none;
     padding: 15px;
-}
-
-.catalog_list:hover {
-    list-style-type: disclosure-open;
 }
 
 .catalog_box {
