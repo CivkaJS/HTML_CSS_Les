@@ -131,6 +131,18 @@
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0.38px;
+    position: relative;
+}
+
+.Button_account_open {
+    position: absolute;
+    width: 262px;
+    height: 440px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    top: 55px;
+    right: 5px;
 }
 
 .categories {
@@ -197,7 +209,7 @@
 }
 
 .accouunt {
-    left: 20px;
+    left: 190px;
 }
 
 .Women {
