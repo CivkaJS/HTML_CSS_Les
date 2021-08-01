@@ -216,6 +216,12 @@
     .Cash_items_prod:nth-child(6) {
         width: 263px;
     }
+    
+    .Link_logo_cash_unsize {
+        width: 263px;
+        display: flex;
+        justify-content: center;
+    }
     /* CSS info_bonus_bgc */
     
     .info_bonus_bgc {

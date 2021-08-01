@@ -502,6 +502,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 79px;
+    justify-content: center;
 }
 
 .Cash_items {
