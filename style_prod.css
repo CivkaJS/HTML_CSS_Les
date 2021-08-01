@@ -38,6 +38,10 @@
     text-decoration: none;
 }
 
+.style_link_bread_crumbs:hover {
+    color: #ef5b70;
+}
+
 
 /* CSS product_select_form */
 
