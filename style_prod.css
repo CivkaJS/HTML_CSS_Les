@@ -48,12 +48,15 @@
 
 /* Menu_product_select */
 
-.product_select_form {}
+.product_select_form {
+    display: flex;
+}
 
 .menu_product_select {
     width: 243px;
     display: flex;
     flex-direction: column;
+    margin-top: 59px;
 }
 
 .box_product_select {
@@ -104,13 +107,23 @@
 
 /*CSS product_select */
 
-.product_select {}
+.product_select {
+    margin-left: 50px;
+    margin-top: 71px;
+}
 
 .config_serch {}
 
-.tranding_now {}
+.tranding_now {
+    width: 176px;
+}
 
-.form_tranding_now {}
+.form_tranding_now {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-between;
+}
 
 .link_tranding_now {}
 
