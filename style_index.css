@@ -98,6 +98,24 @@
     top: 55px;
 }
 
+.button_account_open_form {
+    width: 90%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box_form_cash_items {
+    margin-top: 21px;
+}
+
+.cash_items {
+    margin-bottom: 16px;
+}
+
 .Brouse_catalog {
     display: flex;
     flex-direction: column;
