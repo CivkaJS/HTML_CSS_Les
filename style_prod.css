@@ -50,6 +50,7 @@
 
 .product_select_form {
     display: flex;
+    width: 1140px;
 }
 
 .menu_product_select {
