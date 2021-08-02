@@ -202,6 +202,13 @@
         top: 35px;
     }
     
+    .Sale_catalog_items_prod {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 197px;
+        justify-content: center;
+    }
+    
     .Cash_items_prod {
         list-style-type: none;
         margin-right: 31px;
@@ -224,7 +231,18 @@
         justify-content: center;
     }
     
-    .Num_page_product {}
+    .position_relative {
+        position: relative;
+    }
+    
+    .Num_page_product {
+        position: absolute;
+        width: 261px;
+        height: 44px;
+        border-radius: 3px;
+        border: 1px solid #ebebeb;
+        bottom: -110px;
+    }
     
     .Box_num_page_product {
         display: flex;
@@ -233,7 +251,24 @@
     
     .Link_num_page_prod,
     .Link_num_page_prod_back {
-        margin-right: 6px;
+        margin-right: 16px;
+    }
+    
+    .Link_num_page_prod,
+    .Link_num_page_prod_back,
+    .Link_num_page_prod_prev {
+        text-decoration: none;
+        color: #c4c4c4;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+    
+    .Link_num_page_prod:hover,
+    .Link_num_page_prod_back:hover,
+    .Link_num_page_prod_prev:hover {
+        color: #ef5b70;
     }
     
     .Link_num_page_prod_back::before {
@@ -244,7 +279,31 @@
         content: '>';
     }
     
-    .Link_num_page_prod {}
+    .Form_button_view_all {
+        position: absolute;
+        right: 0px;
+        bottom: -100px;
+    }
+    
+    .Button_view_all {
+        width: 150px;
+        height: 44px;
+        border-radius: 3px;
+        border: 1px solid #c4c4c4;
+        color: #c4c4c4;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 26px;
+        text-align: left;
+    }
+    
+    .Button_view_all:hover {
+        border: 1px solid #ef5b70;
+        color: #ef5b70;
+    }
     /* CSS info_bonus_bgc */
     
     .info_bonus_bgc {
