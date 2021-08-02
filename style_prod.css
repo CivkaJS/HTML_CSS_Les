@@ -1,3 +1,10 @@
+    .backgroundcolor_#e9e9e9 {
+        background-color: #e9e9e9;
+    }
+    
+    .backgroundcolor_#fcf8ed {
+        background-color: #fcf8ed;
+    }
     /* CSS bread_crumbs_bgc */
     
     .bread_crumbs_bgc {
@@ -220,15 +227,7 @@
         margin-right: 0px;
     }
     
-    .Cash_items_prod:nth-child(4),
-    .Cash_items_prod:nth-child(6),
-    .Cash_items_prod:nth-child(9) {
-        background-color: #e9e9e9;
-    }
-    
-    .Cash_items_prod:nth-child(9) {
-        background-color: #fcf8ed;
-    }
+    .Link_logo_cash {}
     
     .Cash_items_prod:nth-child(4),
     .Cash_items_prod:nth-child(6) {
