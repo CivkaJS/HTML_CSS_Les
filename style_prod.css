@@ -109,6 +109,7 @@
     
     .config_serch {
         display: flex;
+        justify-content: space-around;
     }
     
     .tranding_now {
@@ -222,6 +223,28 @@
         display: flex;
         justify-content: center;
     }
+    
+    .Num_page_product {}
+    
+    .Box_num_page_product {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .Link_num_page_prod,
+    .Link_num_page_prod_back {
+        margin-right: 6px;
+    }
+    
+    .Link_num_page_prod_back::before {
+        content: '<';
+    }
+    
+    .Link_num_page_prod_prev::before {
+        content: '>';
+    }
+    
+    .Link_num_page_prod {}
     /* CSS info_bonus_bgc */
     
     .info_bonus_bgc {
