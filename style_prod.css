@@ -227,7 +227,14 @@
         margin-right: 0px;
     }
     
-    .Link_logo_cash {}
+    .Cash_items_prod:nth-child(1),
+    .Cash_items_prod:nth-child(2),
+    .Cash_items_prod:nth-child(3),
+    .Cash_items_prod:nth-child(4),
+    .Cash_items_prod:nth-child(5),
+    .Cash_items_prod:nth-child(6) {
+        margin-bottom: 38px;
+    }
     
     .Cash_items_prod:nth-child(4),
     .Cash_items_prod:nth-child(6) {
