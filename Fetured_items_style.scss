@@ -1,0 +1,123 @@
+.Fetured_Items_Form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .Head_of_sale {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  
+  .Top_head_of_sale {
+    color: #222222;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.75px;
+  }
+  
+  .Bottom_head_of_sale { 
+    color: #9f9f9f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.35px;
+  }
+  
+  .Sale_catalog_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 79px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  
+  .Cash_items {
+    list-style-type: none;
+    margin-right: 31px;
+  }
+  
+  .Link_cash_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: none;
+  }
+  
+  .Cash_item_info_top {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 19px;
+    margin-bottom: 17px;
+  }
+  
+  .Cash_item_info_bottom {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .Cash_items:nth-child(4),
+  .Cash_items:nth-child(8) {
+    margin-right: 0px;
+  }
+  
+  .Cash_items:nth-child(1),
+  .Cash_items:nth-child(2),
+  .Cash_items:nth-child(3),
+  .Cash_items:nth-child(4) {
+    margin-bottom: 32px;
+  }
+  
+  .Link_logo_cash:hover {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  
+  .Button_cash_item {
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.4px;
+    margin-bottom: 113px;
+  }

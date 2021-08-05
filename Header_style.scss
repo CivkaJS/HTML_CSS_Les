@@ -1,0 +1,251 @@
+.heading {
+    height: 100px;
+  }
+  
+  .line_control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1140px;
+  }
+  
+  .Friendly_logo {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .Logo_home_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+  }
+  
+  .Logo_home_page_info {
+    padding-left: 12px;
+    padding-top: 10px;
+    width: 93px;
+    height: 19px;
+    color: #222222;
+    font-family: "Lato Light";
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.68px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .Logo_home_page_info::after {
+    content: "D";
+    color: #f16d7f;
+    font-family: "Lato - Black";
+    font-weight: 400;
+    letter-spacing: 0.68px;
+  }
+  
+  .Serch_line {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0 0 3px;
+    width: 403px;
+    left: 250px;
+    top: 5px;
+  }
+  
+  .Friendly_Account {
+    position: relative;
+    padding-top: 5px;
+  }
+  
+  .Button_brouse {
+    width: 87px;
+    height: auto;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    color: #222222;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.35px;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .Button_browes_open {
+    position: absolute;
+    width: 262px;
+    height: 565px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+    top: 55px;
+  }
+  
+  .button_account_open_form {
+    width: 90%;
+  }
+  
+  .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .Box_form_cash_items {
+    margin-top: 21px;
+  }
+  
+  .cash_items {
+    margin-bottom: 16px;
+  }
+  
+  .cash_result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 19px;
+  }
+  
+  .Check_cash_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .Check_cash_items {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 11px;
+  }
+  
+  .Check_cash_items:hover {
+    color: #f16d7f;
+    border-color: #f16d7f;
+  }
+  
+  .cash_result_info {
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .Brouse_catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .search_line {
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    font-family: Lato;
+    width: 279px;
+  }
+  
+  .search_icon_form {
+    width: 38px;
+  }
+  
+  .Store_box {
+    position: absolute;
+    left: -55px;
+    top: 10px;
+  }
+  
+  .Button_registration {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.38px;
+    position: relative;
+  }
+  
+  .Button_account_open {
+    position: absolute;
+    width: 262px;
+    height: 440px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    top: 55px;
+    right: 5px;
+  }
+  
+  .cash_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .Name_cash_items {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  
+  .num_cash_items {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+  }
