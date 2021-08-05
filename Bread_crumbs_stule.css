@@ -1,0 +1,51 @@
+/* CSS bread_crumbs_bgc */
+.bread_crumbs_bgc {
+  background-color: #f8f3f4;
+}
+
+.bread_crumbs {
+  height: 148px;
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f3f4;
+}
+
+.bread_crumbs_head {
+  color: #f16d7f;
+  font-family: "Lato - Black";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brad_crumbs_map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.style_link_bread_crumbs {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.style_link_bread_crumbs:hover {
+  color: #ef5b70;
+}
+/*# sourceMappingURL=Bread_crumbs_stule.css.map */
