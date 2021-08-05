@@ -104,10 +104,10 @@
     margin-bottom: 32px;
   }
   
-  .Link_logo_cash:hover {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
+
+  .Link_logo_cash:hover, .Link_logo_cash_unsize:hover{
+    filter: brightness(70%); 
+   }
   
   .Button_cash_item {
     width: 212px;
