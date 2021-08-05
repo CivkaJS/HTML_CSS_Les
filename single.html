@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<!-- Обязательные метатеги -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style_single.css">
+
+</head>
+
+<body>
+	<!-- Вариант 1: Bootstrap в связке с Popper-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<div class="container heading">
+		<div class="line_control">
+			<div class="Friendly_logo">
+				<a class="Logo_home_page" href="index.html">
+					<img src="img/Home_page.png" alt="Logo_start_page" style="width: 59px; height: 51px;">
+					<h1 class="Logo_home_page_info">Bran</h1>
+				</a>
+				<form action="#">
+					<div class="Serch_line">
+						<!-- <input class="Button_brouse text" type="button" value="Browse"> -->
+						<details class="Button_brouse">
+							<summary style="text-align: center;">Browse</summary>
+							<div class="Button_browes_open">
+								<div class="Brouse_catalog">
+									<h3>Woman</h3>
+									<div></div>
+									<a class="Button_brouse_link_1" href="product.html">Dresses</a>
+									<a class="Button_brouse_link" href="product.html">Tops</a>
+									<a class="Button_brouse_link" href="product.html">Sweaters/Knits</a>
+									<a class="Button_brouse_link" href="product.html">Jackets/Coats</a>
+									<a class="Button_brouse_link" href="product.html">Blazers</a>
+									<a class="Button_brouse_link" href="product.html">Denim</a>
+									<a class="Button_brouse_link" href="product.html">Leggings/Pants</a>
+									<a class="Button_brouse_link" href="product.html">Skirts/Shorts</a>
+									<a class="Button_brouse_link" href="product.html">Accessories </a>
+								</div>
+								<div class="Brouse_catalog">
+									<h3>Man</h3>
+									<div></div>
+									<a class="Button_brouse_link_1" href="#">Tees/Tank topss</a>
+									<a class="Button_brouse_link" href="product.html">Shirts/Polos</a>
+									<a class="Button_brouse_link" href="product.html">Sweaters/Knits</a>
+									<a class="Button_brouse_link" href="product.html">Sweaters</a>
+									<a class="Button_brouse_link" href="product.html">Sweatshirts/Hoodies</a>
+									<a class="Button_brouse_link" href="product.html">Blazers</a>
+									<a class="Button_brouse_link" href="product.html">Jackets/vestss</a>
+								</div>
+							</div>
+						</details>
+						<input class="search_line" type="text" placeholder="Search for Item...">
+						<div class="search_icon_form center">
+							<input class="search_icon" type="image" name="picture" src="img/serch.png" alt="serch">
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="Friendly_Account">
+				<input class="Store_box" type="image" name="Store_box" src="img/Bucket.png" alt="Bucket">
+				<!-- <input class="Button_registration text" type="button" value="My Account"> -->
+				<details class="Button_registration">
+					<summary style="text-align: center; line-height: 38px;">My Account</summary>
+					<div class="Button_account_open center">
+						<div class="button_account_open_form">
+							<ul style="padding: 0;">
+								<li>
+									<figure class="Box_form_cash_items">
+										<figcaption class="cash_items">
+											<a href="single.html">
+												<img src="img/My_account_cash_men.png" alt="Cash_items">
+											</a>
+											<div class="info_cash_items">
+												<h3 class="Name_cash_items">Rebox Zane</h3>
+												<img src="img/star.png" alt="star">
+												<p class="num_cash_items">1 x $250</p>
+											</div>
+											<input style="width: 15px; height: 15px;" type="image" src="img/cancel.png"
+												alt="cancel">
+										</figcaption>
+										<div style="width: 100%; border: 1px solid gray;"></div>
+									</figure>
+								</li>
+								<li>
+									<figure class="Box_form_cash_items">
+										<figcaption class="cash_items">
+											<a href="single.html">
+												<img src="img/My_account_cash_women.png" alt="Cash_items"
+													class="items_img_box">
+											</a>
+											<div class="info_cash_items">
+												<h3 class="Name_cash_items">Rebox Zane</h3>
+												<img src="img/star.png" alt="star">
+												<p class="num_cash_items">1 x $250</p>
+											</div>
+											<input style="width: 15px; height: 15px;" type="image" src="img/cancel.png"
+												alt="cancel">
+										</figcaption>
+										<div style="width: 100%; border: 1px solid gray;"></div>
+									</figure>
+								</li>
+							</ul>
+							<div class="cash_result">
+								<p class="cash_result_info">TOTAL</p>
+								<p class="cash_result_info"> $500.00</p>
+							</div>
+							<div class="Check_cash_items">
+								<input type="button" value="Checkout" class="Check_cash_items center">
+								<input type="button" value="Go to cart" class="Check_cash_items center">
+							</div>
+						</div>
+					</div>
+				</details>
+			</div>
+		</div>
+	</div>
+	<nav class="container categories">
+		<ul class="catalog">
+			<li class="catalog_list"><a class="link" href="#">Home</a></li>
+			<li class="catalog_list">
+				<a class="link" href="#">Men</a>
+				<div class="catalog_box man">
+					<div class="indicator"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Men</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Men</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Men</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+				</div>
+			</li>
+			<li class="catalog_list">
+				<a class="link" href="#">Women</a>
+				<div class="catalog_box">
+					<div class="indicator Women"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Women</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Women</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Women</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+				</div>
+			</li>
+			<li class="catalog_list">
+				<a class="link" href="#">Kids</a>
+				<div class="catalog_box">
+					<div class="indicator Kids"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Kids</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Kids</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Kids</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+				</div>
+			</li>
+			<li class="catalog_list">
+				<a class="link" href="#">Accoseriese</a>
+				<div class="catalog_box">
+					<div class="indicator Accoseriese"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Accoseriese</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Accoseriese</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Accoseriese</h3>
+						<div class="line"></div>
+						<a class="item_link" href="product.html">Dresses</a>
+						<a class="item_link" href="product.html">Tops</a>
+						<a class="item_link" href="product.html">Sweaters/Knits</a>
+						<a class="item_link" href="product.html">Jackets/Coats</a>
+						<a class="item_link" href="product.html">Blazers</a>
+						<a class="item_link" href="product.html">Denim</a>
+						<a class="item_link" href="product.html">Leggings/Pants</a>
+						<a class="item_link" href="product.html">Skirts/Shorts</a>
+						<a class="item_link" href="product.html">Accessories </a>
+					</div>
+				</div>
+			</li>
+			<li class="catalog_list">
+				<a class="link" href="#">Featured</a>
+				<div class="catalog_box">
+					<div class="indicator Featured"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Featured</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Featured</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Featured</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+				</div>
+			</li>
+			<li class="catalog_list">
+				<a class="link" href="#">Hot Deals</a>
+				<div class="catalog_box">
+					<div class="indicator Hot_Deal"></div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Hot Deal</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Hot Deal</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+					<div class="Catalog_items">
+						<h3 class="Head_Catalog">Hot Deal</h3>
+						<div class="line"></div>
+						<a class="item_link" href="#">Dresses</a>
+						<a class="item_link" href="#">Tops</a>
+						<a class="item_link" href="#">Sweaters/Knits</a>
+						<a class="item_link" href="#">Jackets/Coats</a>
+						<a class="item_link" href="#">Blazers</a>
+						<a class="item_link" href="#">Denim</a>
+						<a class="item_link" href="#">Leggings/Pants</a>
+						<a class="item_link" href="#">Skirts/Shorts</a>
+						<a class="item_link" href="#">Accessories </a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<div class="bread_crumbs_bgc">
+		<div class="container bread_crumbs">
+			<h3 class="bread_crumbs_head">New Arrivals </h3>
+
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item style_link_bread_crumbs"><a class="link_breadcrumbs"
+							href="index.html">HOME</a></li>
+					<li class="breadcrumb-item style_link_bread_crumbs"><a class="link_breadcrumbs"
+							href="product.html">MAN</a></li>
+					<li class="breadcrumb-item style_link_bread_crumbs active link_breadcrumbs" aria-current="page">NEW
+						ARRIVALS</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+	<div class="slide_bgc">
+		<div id="carouselExampleControls" class="container carousel slide slide_center" data-bs-ride="carousel">
+			<div class="carousel-inner carousel-inner_width">
+				<div class="carousel-item active d-block_img ">
+					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
+				</div>
+				<div class="carousel-item d-block_img">
+					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
+				</div>
+				<div class="carousel-item d-block_img">
+					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
+				</div>
+			</div>
+			<button class="carousel-control-prev button_slide_color" type="button"
+				data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Предыдущий</span>
+			</button>
+			<button class="carousel-control-next button_slide_color" type="button"
+				data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+	</div>
+	<div class="container fly_window_form">
+
+	</div>
+	<div class="conclusion_bgc">
+		<div class="container container_fixed_img">
+			<div class="conclusion">
+				<div class="container biography_form">
+					<div class="biography_box">
+						<figure class="biography_info">
+							<img class="conclusion_img" src="img/Author.png" alt="Author">
+							<figcaption>
+								<p class="biography_history">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+									pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+								</p>
+								<p class="author">Bin Burhan</p>
+								<p class="city">Dhaka, Bd</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="line_center">
+					</div>
+					<div class="submit_form">
+						<div class="submit_info">
+							<h3 class="top_conclusion_info">Subscribe</h3>
+							<p class="bottom_conclusion_info"> FOR OUR NEWLETTER AND PROMOTION</p>
+						</div>
+						<form action="#">
+							<div class="submit_input_form">
+								<input class="Line_submit" type="email" placeholder="Enter Your Email">
+								<input class="submit_button" type="button" value="Subscribe">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container footer">
+		<div class="footer_left_box">
+			<div class="footer_left_info">
+				<a class="Logo_home_page" href="index.html">
+					<img src="img/Home_page.png" alt="Logo_start_page" style="width: 59px; height: 51px;">
+					<h1 class="Logo_home_page_info">Bran</h1>
+				</a>
+				<p class="top_footer_text">Objectively transition extensive data rather than cross functional solutions.
+					Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+					syndicate an expanded array of processes and cross-unit partnerships.
+					<br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+					superior initiatives for wireless technologies. Dynamically optimize.
+				</p>
+			</div>
+		</div>
+		<div class="footer_right_box">
+			<ul>
+				<li class="footer_right_info">COMPANY</li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Home</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Shop</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Abou</a>t</li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">How It Works</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Contact</a></li>
+			</ul>
+			<ul>
+				<li class="footer_right_info">INFORMATION</li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Tearms & Condition</a>
+				</li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Privacy Policy</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">How to Buy</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">How to Sell</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Promotion</a></li>
+			</ul>
+			<ul>
+				<li class="footer_right_info">SHOP CATEGORY</li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Men</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Women</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Child</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Apparel</a></li>
+				<li class="footer_right_info"><a class="link_footer_right_info" href="#">Brows All</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="last_line_form">
+		<div class="container last_line_box">
+			<p>© 2017 Brand All Rights Reserved.</p>
+			<div>
+				<ul class="square_last_line">
+					<li class="form_square_last_line">
+						<a href="#" class="link_last-line">
+							<img src="img/facebook.png" alt="facebook">
+						</a>
+					</li>
+					<li class="form_square_last_line">
+						<a href="#" class="link_last-line">
+							<img src="img/twiter.png" alt="twiter">
+						</a>
+					</li>
+					<li class="form_square_last_line">
+						<a href="#" class="link_last-line">
+							<img src="img/linkedln.png" alt="linkedln">
+						</a>
+					</li>
+					<li class="form_square_last_line">
+						<a href="#" class="link_last-line">
+							<img src="img/Pinterest.png" alt="Pinterest">
+						</a>
+					</li>
+					<li class="form_square_last_line">
+						<a href="#" class="link_last-line">
+							<img src="img/google.png" alt="google">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
