@@ -1,20 +1,17 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<!-- Обязательные метатеги -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Bootstrap CSS -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="style_single.css">
-
+	<link rel="stylesheet" href="style_shoping_cart.css">
 </head>
 
 <body>
-	<!-- Вариант 1: Bootstrap в связке с Popper-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
@@ -415,140 +412,140 @@
 			</nav>
 		</div>
 	</div>
-	<div class="slide_bgc">
-		<div id="carouselExampleControls" class="container carousel slide slide_center" data-bs-ride="carousel">
-			<div class="carousel-inner carousel-inner_width">
-				<div class="carousel-item active d-block_img ">
-					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
-				</div>
-				<div class="carousel-item d-block_img">
-					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
-				</div>
-				<div class="carousel-item d-block_img">
-					<img src="img/Single_women.png" class="d-block w-100" alt="Single_women">
-				</div>
-			</div>
-			<button class="carousel-control-prev button_slide_color" type="button"
-				data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Предыдущий</span>
-			</button>
-			<button class="carousel-control-next button_slide_color" type="button"
-				data-bs-target="#carouselExampleControls" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Следующий</span>
-			</button>
-		</div>
-	</div>
-	<div class="container fly_window_form">
-		<div class="fly_window_info center">
-			<div class="fly_window_content center">
-				<div class="fly_window_header center">
-					<p class="fly_window_header_top">WOMEN COLLECTION</p>
-					<div class="line_fly_window_header">
-						<div class="line_pink_fly_window_header"></div>
-					</div>
-					<p class="fly_window_header_center">Moschino Cheap And Chic</p>
-					<p class="fly_window_header_bottom">Compellingly actualize fully researched processes before
-						proactive outsourcing. Progressively
-						syndicate collaborative architectures before cutting-edge services. Completely visualize
-						parallel core competencies rather than exceptional portals. </p>
-				</div>
-				<div class="fly_window_struct">
-					<p class="Material_fly_window">MATERIAL:</p>
-					<p class="Designed_fly_window">DESIGNER:</p>
-				</div>
-				<div class="fly_window_cash">
-					<p class="fly_window_cash_style">$561</p>
-					<div class="line_fly_window_cash">
-					</div>
-				</div>
-			</div>
-			<form action="#">
-				<div class="select_option_fly_window">
-					<div class="select_option">
-						<select class="form_select">
-							<option selected>RED</option>
-							<option value="1">White</option>
-							<option value="2">Brown</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-
-					<div class="select_option">
-						<select class="form_select">
-							<option>XXS</option>
-							<option value="1">XS</option>
-							<option value="2">S</option>
-							<option value="3">M</option>
-							<option value="4">L</option>
-							<option value="5">XL</option>
-							<option value="6">XXL</option>
-						</select>
-					</div>
-					<input class="select_option" type="text" placeholder="2">
-				</div>
-				<div class="Button_option_fly_window">
-					<input type="button" value="Add to Cart" class="Button_select_option">
-					<img src="img/Forma_bucket.png" alt="Forma_bucket" class="img_button_select_option">
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="container over_items_form center">
-		<p class="header_over_items">you may like also</p>
-		<div class="cart_over_items">
-			<ul class="Sale_catalog_items">
-				<li class="Cash_items">
-					<a href="product.html" class="Link_cash_items">
-						<div class="Link_logo_cash">
-							<img src="img/Single_W1.png" alt="Single_W1">
+	<div class="add_catalog_item_form container">
+		<ul class="header_add_catalog_item">
+			<li class="style_header_add_catalog_item">Product Details</li>
+			<li class="style_header_add_catalog_item center">unite Price</li>
+			<li class="style_header_add_catalog_item center">Quantity</li>
+			<li class="style_header_add_catalog_item center">shipping</li>
+			<li class="style_header_add_catalog_item center">Subtotal</li>
+			<li class="style_header_add_catalog_item center">ACTION</li>
+		</ul>
+		<hr>
+		<ul class="Num_add_catalog_item_form">
+			<li class="Num_add_catalog_item">
+				<ul class="add_catalog_item">
+					<li class="style_header_add_catalog_item">
+						<div class="img_add_catalog_item">
+							<img src="img/SC_1.png" alt="item_1">
 						</div>
-						<div class="add_to_cart_form center">
-							<p class="info_add_to_cart">Add to Cart</p>
+						<ul class="form_img_info_add_catalog_item">
+							<li class="info_add_catalog_item">
+								<p>Mango People T-shirt</p>
+							</li>
+							<li class="info_add_catalog_item">
+								<ul class="form_param_info_add_catalog_item">
+									<li class="param_info_add_catalog_item">Color:</li>
+									<li class="param_info_add_catalog_item">Size:</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="style_header_add_catalog_item center">150$</li>
+					<li class="style_header_add_catalog_item center">
+						<input class="QUANTITY_option" type="text" placeholder="2">
+					</li>
+					<li class="style_header_add_catalog_item center">FREE</li>
+					<li class="style_header_add_catalog_item center">300$</li>
+					<li class="style_header_add_catalog_item center">
+						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					</li>
+				</ul>
+				<hr>
+			</li>
+			<li class="Num_add_catalog_item">
+				<ul class="add_catalog_item">
+					<li class="style_header_add_catalog_item">
+						<div class="img_add_catalog_item">
+							<img src="img/SC_2.png" alt="item_1">
 						</div>
-						<span class="Cash_item_info_top">Mango People T-shirt</span>
-						<span class="Cash_item_info_bottom">$52.00</span>
-					</a>
-				</li>
-				<li class="Cash_items">
-					<a href="product.html" class="Link_cash_items">
-						<div class="Link_logo_cash">
-							<img src="img/Single_W2.png" alt="Single_W2">
+						<ul class="form_img_info_add_catalog_item">
+							<li class="info_add_catalog_item">
+								<p>Mango People T-shirt</p>
+							</li>
+							<li class="info_add_catalog_item">
+								<ul class="form_param_info_add_catalog_item">
+									<li class="param_info_add_catalog_item">Color:</li>
+									<li class="param_info_add_catalog_item">Size:</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="style_header_add_catalog_item center">150$</li>
+					<li class="style_header_add_catalog_item center">
+						<input class="QUANTITY_option" type="text" placeholder="2">
+					</li>
+					<li class="style_header_add_catalog_item center">FREE</li>
+					<li class="style_header_add_catalog_item center">300$</li>
+					<li class="style_header_add_catalog_item center">
+						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					</li>
+				</ul>
+				<hr>
+			</li>
+			<li class="Num_add_catalog_item">
+				<ul class="add_catalog_item">
+					<li class="style_header_add_catalog_item">
+						<div class="img_add_catalog_item">
+							<img src="img/SC_3.png" alt="item_1">
 						</div>
-						<div class="add_to_cart_form center">
-							<p class="info_add_to_cart">Add to Cart</p>
+						<ul class="form_img_info_add_catalog_item">
+							<li class="info_add_catalog_item">
+								<p>Mango People T-shirt</p>
+							</li>
+							<li class="info_add_catalog_item">
+								<ul class="form_param_info_add_catalog_item">
+									<li class="param_info_add_catalog_item">Color:</li>
+									<li class="param_info_add_catalog_item">Size:</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="style_header_add_catalog_item center">150$</li>
+					<li class="style_header_add_catalog_item center">
+						<input class="QUANTITY_option" type="text" placeholder="2">
+					</li>
+					<li class="style_header_add_catalog_item center">FREE</li>
+					<li class="style_header_add_catalog_item center">300$</li>
+					<li class="style_header_add_catalog_item center">
+						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					</li>
+				</ul>
+				<hr>
+			</li>
+			<li class="Num_add_catalog_item">
+				<ul class="add_catalog_item">
+					<li class="style_header_add_catalog_item">
+						<div class="img_add_catalog_item">
+							<img src="img/SC_3.png" alt="item_1">
 						</div>
-						<span class="Cash_item_info_top">Mango People T-shirt</span>
-						<span class="Cash_item_info_bottom">$52.00</span>
-					</a>
-				</li>
-				<li class="Cash_items">
-					<a href="product.html" class="Link_cash_items">
-						<div class="Link_logo_cash">
-							<img src="img/Single_W3.png" alt="Single_W3">
-						</div>
-						<div class="add_to_cart_form center">
-							<p class="info_add_to_cart">Add to Cart</p>
-						</div>
-						<span class="Cash_item_info_top">Mango People T-shirt</span>
-						<span class="Cash_item_info_bottom">$52.00</span>
-					</a>
-				</li>
-				<li class="Cash_items">
-					<a href="product.html" class="Link_cash_items">
-						<div class="Link_logo_cash">
-							<img src="img/Single_W4.png" alt="Single_W4">
-						</div>
-						<div class="add_to_cart_form center">
-							<p class="info_add_to_cart">Add to Cart</p>
-						</div>
-						<span class="Cash_item_info_top">Mango People T-shirt</span>
-						<span class="Cash_item_info_bottom">$52.00</span>
-					</a>
-				</li>
-			</ul>
-		</div>
+						<ul class="form_img_info_add_catalog_item">
+							<li class="info_add_catalog_item">
+								<p>Mango People T-shirt</p>
+							</li>
+							<li class="info_add_catalog_item">
+								<ul class="form_param_info_add_catalog_item">
+									<li class="param_info_add_catalog_item">Color:</li>
+									<li class="param_info_add_catalog_item">Size:</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="style_header_add_catalog_item center">150$</li>
+					<li class="style_header_add_catalog_item center">
+						<input class="QUANTITY_option" type="text" placeholder="2">
+					</li>
+					<li class="style_header_add_catalog_item center">FREE</li>
+					<li class="style_header_add_catalog_item center">300$</li>
+					<li class="style_header_add_catalog_item center">
+						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					</li>
+				</ul>
+				<hr>
+				<input class="Button_add_catalog_clear" type="button" alt="Clear" value="cLEAR SHOPPING CART">
+				<input class="Button_add_catalog_continue" type="button" alt="continue" value="cONTINUE sHOPPING">
+			</li>
+		</ul>
 	</div>
 	<div class="conclusion_bgc">
 		<div class="container container_fixed_img">

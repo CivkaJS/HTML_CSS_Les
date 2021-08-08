@@ -448,7 +448,7 @@ p {
   text-transform: uppercase;
 }
 
-.style_link_bread_crumbs:hover {
+.style_link_bread_crumbs {
   color: #ef5b70;
 }
 
@@ -699,6 +699,7 @@ p {
   font-weight: 400;
   line-height: 33px;
   text-align: left;
+  padding: 0;
 }
 
 /*CSS product_select */
@@ -1307,5 +1308,9 @@ p {
 
 .link_last-line:hover {
   background-color: #f16d7f;
+}
+
+.submit_button {
+  height: 45px;
 }
 /*# sourceMappingURL=style_prod.css.map */
