@@ -1,11 +1,15 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .heading {
@@ -432,6 +436,10 @@
   text-transform: uppercase;
 }
 
+.link_breadcrumbs {
+  text-decoration: none;
+}
+
 .brad_crumbs_map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +454,6 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .style_link_bread_crumbs:hover {
@@ -560,9 +567,9 @@
   margin-bottom: 32px;
 }
 
-.Link_logo_cash:hover {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+.Link_logo_cash:hover, .Link_logo_cash_unsize:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .Button_cash_item {
@@ -673,8 +680,19 @@
           justify-content: space-between;
 }
 
-.link_tranding_now {
-  text-decoration: none;
+.Header_product_select {
+  margin-bottom: 25px;
+}
+
+.style_bread_crumbs_header_product_select {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
 }
 
 .size {
@@ -728,23 +746,34 @@
 }
 
 .sort_list_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 86px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+}
+
+.sort_list_button select {
+  display: block;
+  width: 80px;
+  height: 26px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 5px;
   color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
   line-height: 26px;
   text-align: left;
-  position: relative;
+}
+
+.sort_list_button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  content: url(img/12.png);
+  right: 10px;
 }
 
 .sort_list_info {
@@ -806,14 +835,12 @@
 
 .Link_logo_cash_unsize {
   width: 263px;
-  height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #e9e9e;
 }
 
 .position_relative {

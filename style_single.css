@@ -1,11 +1,15 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .heading {
@@ -424,6 +428,10 @@
   text-transform: uppercase;
 }
 
+.link_breadcrumbs {
+  text-decoration: none;
+}
+
 .brad_crumbs_map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,15 +446,10 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .style_link_bread_crumbs:hover {
   color: #ef5b70;
-}
-
-.link_breadcrumbs {
-  text-decoration: none;
 }
 
 .slide_bgc {
@@ -811,8 +814,8 @@
 }
 
 .Link_logo_cash:hover, .Link_logo_cash_unsize:hover {
-  -webkit-filter: brightness(10%);
-          filter: brightness(10%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .Button_cash_item {

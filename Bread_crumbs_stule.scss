@@ -23,6 +23,10 @@
     text-transform: uppercase;
 }
 
+.link_breadcrumbs{
+	text-decoration: none;
+}
+
 .brad_crumbs_map {
     display: flex;
 }
@@ -35,7 +39,6 @@
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .style_link_bread_crumbs:hover {

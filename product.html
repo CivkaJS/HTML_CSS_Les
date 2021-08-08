@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_prod.css">
-    <!-- <link rel="stylesheet" href="style_index.css"> -->
-    <title>Document</title>
+<link rel="stylesheet" href="style_prod.css">
+
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <div class="container heading">
         <div class="line_control">
             <div class="Friendly_logo">
@@ -394,12 +395,16 @@
     <div class="bread_crumbs_bgc">
         <div class="container bread_crumbs">
             <h3 class="bread_crumbs_head">New Arrivals </h3>
-            <nav class="brad_crumbs_map">
-                <a class="style_link_bread_crumbs" href="index.html">HOME</a>
-                <p>/</p>
-                <a class="style_link_bread_crumbs" href="product.html">MEN</a>
-                <p>/</p>
-                <a class="style_link_bread_crumbs" href="#">New Arrivals</a>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item style_link_bread_crumbs"><a class="link_breadcrumbs"
+                            href="index.html">HOME</a></li>
+                    <li class="breadcrumb-item style_link_bread_crumbs"><a class="link_breadcrumbs"
+                            href="product.html">MAN</a></li>
+                    <li class="breadcrumb-item style_link_bread_crumbs active link_breadcrumbs" aria-current="page">NEW
+                        ARRIVALS</li>
+                </ol>
             </nav>
         </div>
     </div>
@@ -476,18 +481,25 @@
             <div class="config_serch">
                 <div class="tranding_now">
                     <h3 class="Header_product_select">Tranding now</h3>
-                    <nav class="form_tranding_now">
-                        <a class="link_tranding_now" href="#">Bohemian</a>
-                        <p>|</p>
-                        <a class="link_tranding_now" href="#">Floral </a>
-                        <p>|</p>
-                        <a class="link_tranding_now" href="#">Lace </a>
-                        <p>|</p>
-                        <a class="link_tranding_now" href="#">Floral</a>
-                        <p>|</p>
-                        <a class="link_tranding_now" href="#">Lace </a>
-                        <p>|</p>
-                        <a class="link_tranding_now" href="#">Bohemian</a>
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="index.html">Bohemian</a></li>
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="#">Floral</a></li>
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="#">Lace</a></li>
+                        </ol>
+                    </nav>
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="#">Floral</a></li>
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="#">Lace</a></li>
+                            <li class="breadcrumb-item style_bread_crumbs_header_product_select"><a
+                                    class="link_breadcrumbs" href="#">Bohemian</a></li>
+                        </ol>
                     </nav>
                 </div>
                 <div class="size">
@@ -534,42 +546,38 @@
             <div class="sort_list">
                 <div class="sort_list_form">
                     <div class="sort_list_info center">
-                        <h3>Sort By</h3>
+                        <p>Sort By</p>
                     </div>
                     <div style="border: 1px solid #f3f3f3; background-color: #f3f3f3;"></div>
-                    <div class="sort_list_button">
-                        <details>
-                            <summary class="index_button_show">Name</summary>
-                            <ul class="Box_sort_list">
-                                <li>Name</li>
-                                <li>Price</li>
-                                <li>Size</li>
-                            </ul>
-                        </details>
+                    <div class="sort_list_button center">
+                        <select class="index_button_show">
+                            <option selected>Name</option>
+                            <option value="1">White</option>
+                            <option value="2">Brown</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="sort_list_form">
                     <div class="sort_list_info center">
-                        <h3>Show</h3>
+                        <p>Show</p>
                     </div>
                     <div style="border: 1px solid #f3f3f3; background-color: #f3f3f3;"></div>
-                    <div class="sort_list_button">
-                        <details>
-                            <summary class="index_button_show">01</summary>
-                            <ul class="Box_sort_list">
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                                <li>04</li>
-                                <li>05</li>
-                                <li>06</li>
-                                <li>07</li>
-                                <li>08</li>
-                                <li>09</li>
-                                <li>10</li>
-                            </ul>
-                        </details>
+                    <div class="sort_list_button center">
+                        <select class="index_button_show">
+                            <option selected>01</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="1">04</option>
+                            <option value="2">05</option>
+                            <option value="3">06</option>
+                            <option value="1">07</option>
+                            <option value="2">08</option>
+                            <option value="3">09</option>
+                            <option value="3">10</option>
+                        </select>
                     </div>
                 </div>
             </div>
