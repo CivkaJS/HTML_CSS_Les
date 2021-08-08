@@ -693,20 +693,6 @@ p {
   margin-bottom: 72px;
 }
 
-.Link_logo_cash_unsize {
-  width: 263px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #e9e9e9;
-  height: 280px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .Fetured_Items_Form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,7 +755,7 @@ p {
 
 .Cash_items {
   list-style-type: none;
-  margin-right: 31px;
+  margin-right: 29px;
 }
 
 .Link_cash_items {
@@ -813,9 +799,31 @@ p {
   margin-bottom: 32px;
 }
 
+.backgroundcolor_#e9e9e9 {
+  background-color: #e9e9e9;
+}
+
+.backgroundcolor_#fcf8ed {
+  background-color: #fcf8ed;
+}
+
+.Link_logo_cash {
+  width: 263px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9e9e9;
+  height: 280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .Link_logo_cash:hover, .Link_logo_cash_unsize:hover {
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
 }
 
 .Button_cash_item {

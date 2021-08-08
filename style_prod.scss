@@ -1,20 +1,7 @@
-$gray-600 : #f28493;
-
-$breadcrumb-divider-color:           $gray-600;
-$breadcrumb-active-color:            $gray-600;
-$breadcrumb-divider:                quote("|");
-
 @import "container"; 
 @import "Header_style";
 @import "Categories_style";
 
-.backgroundcolor_#e9e9e9 {
-    background-color: #e9e9e9;
-}
-
-.backgroundcolor_#fcf8ed {
-    background-color: #fcf8ed;
-}
 
 @import "Bread_crumbs_stule";
 
@@ -254,11 +241,6 @@ $breadcrumb-divider:                quote("|");
     width: 263px;
 }
 
-.Link_logo_cash_unsize {
-    width: 263px;
-    display: flex;
-    justify-content: center;
-}
 
 .position_relative {
     position: relative;
