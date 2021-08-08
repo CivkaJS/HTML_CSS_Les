@@ -191,15 +191,16 @@ $breadcrumb-divider:                quote("|");
     position: absolute;
     content: url(img/12.png);
     right: 10px;
-
 }
 
-// .sort_list_button:after {
-//     content: url(img/Rectangle_30.png) ;
-// }
+.pagination_custom{
+    justify-content: space-around;
+    width: 260px;
+}
 
-
-
+.page-link_custom{
+    border: none;
+}
 
 .sort_list_info {
     color: #6f6e6e;

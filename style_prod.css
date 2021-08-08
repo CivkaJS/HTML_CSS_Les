@@ -776,6 +776,16 @@ p {
   right: 10px;
 }
 
+.pagination_custom {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 260px;
+}
+
+.page-link_custom {
+  border: none;
+}
+
 .sort_list_info {
   color: #6f6e6e;
   font-family: Lato;
