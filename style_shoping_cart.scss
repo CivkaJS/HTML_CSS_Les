@@ -142,6 +142,164 @@
 		top: 185px;
 	}
 
+	//output_info_result
+	.output_info_result{
+		padding: 0;;
+	}
+
+	.Output_registration_form{
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 79px;
+	}
+
+	.adress_output_registration_form{
+		width: $Width_adress_discount_output;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header_output_registration{
+		color: #222222;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: left;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+	}
+
+	.country_chose_adress_output_registration, .state_chose_output_registration, .postcode_chose_output_registration{
+		height: 45px;
+		border: 1px solid #eaeaea;
+		background-color: #ffffff;
+		margin-bottom: 20px;
+		color: #b1b1b1;
+		font-family: Lato;
+		font-size: 13px;
+		font-weight: 300;
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	.Button_discount_output_registration{
+		width: 118px;
+		height: 35px;
+		border: 1px solid #eaeaea;
+		background-color: #ffffff;
+		color: #4a4a4a;
+		font-family: Lato;
+		font-size: 11px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.Button_adress_output_registration{
+		width: 100px;
+		height: 35px;
+		border: 1px solid #eaeaea;
+		background-color: #ffffff;
+		color: #4a4a4a;
+		font-family: Lato;
+		font-size: 11px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 2px;
+	}
+
+	.Button_adress_output_registration:hover, .Button_discount_output_registration:hover{
+		color: $Color_pink;
+		border-color: $Color_pink;
+	}
+
+	.country_chose_adress_output_registration option{
+		color: #b1b1b1;
+		font-family: Lato;
+		font-size: 13px;
+		font-weight: 300;
+		text-align: left;
+	}
+
+	.discount_output_registration_form{
+		width: $Width_adress_discount_output;
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.over_info_discount_output_registration{
+		color: #000000;
+		font-family: Lato;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: left;
+		margin-top: 5px;
+		margin-bottom: 24px;
+	}
+
+	.result_output_registration_form{
+		width: $Width_checkout_output;
+	}
+
+	.result_output_registration_form{
+		padding: 42px;
+		background-color: #f5f3f3;
+	}
+
+	.info_result_checkout{
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.list_info_result_checkout:first-child{
+		color: #4a4a4a;
+		font-family: Lato;
+		font-size: 11px;
+		font-weight: 400;
+		text-align: right;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+
+	.list_info_result_checkout:first-child::after{
+		content: '900 $';
+		padding-left: 20px;
+	}
+
+	.list_info_result_checkout:nth-child(2){
+		color: #222222;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
+		margin-bottom: 22px;
+	}
+
+	.list_info_result_checkout:nth-child(2)::after{
+		content: '900 $';
+		padding-left: 15px;
+		color: $Color_pink;
+	}
+
+	.Button_result_output_registration{
+		width: 273px;
+		height: 50px;
+		background-color: #f16d7f;
+		color: #ffffff;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 17px;
+	}
+
+
 @import "footer_style";
 
 .submit_button{
