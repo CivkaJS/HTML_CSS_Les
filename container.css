@@ -1,10 +1,14 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=container.css.map */

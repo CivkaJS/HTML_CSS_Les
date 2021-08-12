@@ -1,13 +1,7 @@
 @import "container"; 
 @import "Header_style";
 @import "Categories_style";
-@import"Bread_crumbs_stule";
-
-//Breadcrumbs
-.link_breadcrumbs{
-	text-decoration: none;
-}
-
+@import "Bread_crumbs_stule";
 
 // Slider
 .slide_bgc{
@@ -224,14 +218,6 @@
 	margin-bottom: 72px;
 }
 
-.Link_logo_cash_unsize {
-    width: 263px;
-    display: flex;
-    justify-content: center;
-	background-color: #e9e9e9;
-	height: 280px;
-	box-sizing: border-box
-}
 
 @import "Fetured_items_style";
 
