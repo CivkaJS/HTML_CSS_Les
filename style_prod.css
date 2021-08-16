@@ -448,7 +448,7 @@ p {
   text-transform: uppercase;
 }
 
-.style_link_bread_crumbs {
+.style_link_bread_crumbs:hover {
   color: #ef5b70;
 }
 
