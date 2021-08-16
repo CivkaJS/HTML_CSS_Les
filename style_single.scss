@@ -107,6 +107,7 @@
 	justify-content: space-between;
 	display: flex;
 	width: 345px;
+	margin-top: 28px;
   }
   
   .Designed_fly_window, .Material_fly_window{
@@ -162,6 +163,10 @@
 	  margin-bottom: 28px;
   }
 
+  .select_option{
+	padding-left: 10px;
+  }
+
   .form_select{
 	width: 144px;
 	height: 35px;
@@ -181,8 +186,12 @@
   .Button_select_option{
   	width: 537px;
 	height: 55px;
-	border: 1px solid #ef5b70;
+	border: 1px solid #eaeaea;
 	background-color: #ffffff;
+}
+
+.Button_select_option:hover{
+	border: 1px solid #ef5b70;
 }
 
 .Button_option_fly_window{

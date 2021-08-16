@@ -168,6 +168,11 @@
   text-align: center;
 }
 
+.add_to_cart_form:hover {
+  -webkit-box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
+}
+
 .Button_cash_item {
   width: 212px;
   height: 48px;
@@ -176,8 +181,12 @@
   font-family: Lato;
   font-size: 16px;
   font-weight: 700;
-  line-height: 54px;
+  line-height: 48px;
   letter-spacing: 0.4px;
   margin-bottom: 113px;
+}
+
+.Button_cash_item:hover {
+  border: none;
 }
 /*# sourceMappingURL=Fetured_items_style.css.map */

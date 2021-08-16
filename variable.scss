@@ -13,3 +13,19 @@ $Color_pink: #f16d7f;
 $Width_adress_discount_output: $Width_container*0.311;
 
 $Width_checkout_output: $Width_container*0.316;
+
+@mixin text_style($Co, $FF, $FS, $FW, $FSt, $LS, $LH, $TA, $TT){
+	color: $Co;
+	font-family: $FF;
+	font-size: $FS;
+	font-weight: $FW;
+	font-style: $FSt;
+	letter-spacing: $LS;
+	line-height: $LH;
+	text-align: $TA;
+	text-transform: $TT;
+}
+
+.bootstrap_padding_none{
+	padding: 0;
+}

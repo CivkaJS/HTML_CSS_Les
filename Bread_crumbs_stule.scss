@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f8f3f4;
+    @extend .bootstrap_padding_none;
 }
 
 .bread_crumbs_head {

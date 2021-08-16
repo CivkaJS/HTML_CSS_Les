@@ -1,5 +1,8 @@
+@import "variable";
+
 .heading {
     height: 100px;
+    @extend .bootstrap_padding_none;
   }
   
   .line_control {
@@ -35,14 +38,7 @@
     padding-top: 10px;
     width: 93px;
     height: 19px;
-    color: #222222;
-    font-family: "Lato Light";
-    font-size: 27px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0.68px;
-    text-align: center;
-    text-transform: uppercase;
+    @include text_style(#222222, "Lato Light", 27px, 300, normal, 0.68px, 32px, center, uppercase);
   }
   
   .Logo_home_page_info::after {
@@ -86,12 +82,16 @@
     letter-spacing: 0.35px;
     list-style-type: none;
     position: relative;
+    display: block;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
   }
   
   .Button_browes_open {
     position: absolute;
     width: 262px;
-    height: 565px;
     border-radius: 5px;
     background-color: #ffffff;
     border: 1px solid gray;
@@ -102,8 +102,49 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 19px;
+    padding-bottom: 22px;
     top: 55px;
+    z-index: 1;
+  }
+
+  .Header_brouse_catalog, .Header_brouse_catalog_1{
+    color: #232323;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .Header_brouse_catalog_1{
+    padding-top: 30px;
+  }
+
+  .Button_brouse_link{
+    font-family: Lato;
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+    padding-left: 3%;
+  }
+
+  .Button_brouse_link:hover{
+    color: $Color_pink;
+  }
+
+  .line_bottom{
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
+    margin-bottom: 16px;
   }
   
   .button_account_open_form {
@@ -120,10 +161,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  
-  .Box_form_cash_items {
-    margin-top: 21px;
   }
   
   .cash_items {
@@ -187,17 +224,25 @@
     background-color: #ffffff;
     font-family: Lato;
     width: 279px;
+    padding-left: 15px;
   }
   
   .search_icon_form {
     width: 38px;
   }
-  
-  .Store_box {
+
+  .store_box_form{
     position: absolute;
-    left: -55px;
-    top: 10px;
+    left: -87px;
+    top: -11px;
+    width: 70px;
+    height: 70px;
   }
+
+  .store_box_form:hover .Button_account_open{
+    display: flex;
+  }
+  
   
   .Button_registration {
     width: 130px;
@@ -215,12 +260,15 @@
   .Button_account_open {
     position: absolute;
     width: 262px;
-    height: 440px;
     border-radius: 5px;
     background-color: #ffffff;
     border: 1px solid gray;
-    top: 55px;
-    right: 5px;
+    top: 60px;
+    right: -145px;
+    display: none;
+    z-index: 1;
+    padding-top: 21px;
+    padding-bottom: 19px;
   }
   
   .cash_items {

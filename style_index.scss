@@ -1,3 +1,4 @@
+@import "variable";
 @import "container"; 
 @import "Header_style";
 @import "Categories_style";
@@ -31,13 +32,17 @@
   .Top_letter {
     color: #222222;
     font-family: "Lato - Black";
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 400;
   }
-  
-  .Bottom_letter {
-    color: #f16d7f;
+
+  .Bottom_letter, .Bottom_letter_pink{
     letter-spacing: 1px;
+    font-size: 38px;
+  }
+  
+  .Bottom_letter_pink {
+    color: $Color_pink;
   }
   
   .visual_categories {
