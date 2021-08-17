@@ -1,0 +1,193 @@
+@import "variable";
+@import "container"; 
+@import "Header_style";
+@import "Categories_style";
+@import "Bread_crumbs_stule";
+
+//Checkout_form
+
+.Checkout_form{
+	@extend .bootstrap_padding_none;
+}
+
+.Checkout_box{
+	@extend .bootstrap_padding_none;
+}
+
+.Checkout_number{
+	list-style-type: none;
+}
+
+.Checkout_number:first-child::before{
+	content: "01";
+}
+
+.Checkout_number:nth-child(2)::before{
+	content: "02";
+	padding-right: 10px;
+}
+
+.Checkout_number:nth-child(3)::before{
+	content: "03";
+	padding-right: 10px;
+}
+
+.Checkout_number:nth-child(4)::before{
+	content: "04";
+	padding-right: 10px;
+}
+
+.Checkout_number:nth-child(5)::before{
+	content: "05";
+	padding-right: 10px;
+}
+
+.Checkout_number:nth-child(6)::before{
+	content: "06";
+	padding-right: 10px;
+}
+
+.Checkout_register{
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.Checkout_register_list:nth-child(1){
+	@include text_style(#222222, "Lato", 16px, 700, normal, normal, normal, left, uppercase);	
+	list-style-type: none;
+	margin-bottom: 39px;
+}
+
+.Checkout_register_list:nth-child(2){
+	@include text_style(#222222, "Lato", 13px, 400, normal, normal, normal, left, uppercase);	
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+.Checkout_register_list:nth-child(3){
+	@include text_style(#b3b2b2, "Lato", 13px, 400, normal, normal, 20px, left, normal);	
+	list-style-type: none;
+	margin-bottom: 34px;
+}
+
+.Checkout_register_list:nth-child(4){
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.Checkout_register_list:nth-child(5){
+	list-style-type: none;
+	margin-bottom: 33px;
+}
+
+.RadioBox_style{
+	@include text_style(#222222, "Lato", 12px, 400, normal, normal, normal, left, uppercase);
+	margin-left: 14px;
+}
+
+.Checkout_register_list:nth-child(6){
+	@include text_style(#222222, "Lato", 13px, 400, normal, normal, normal, left, uppercase);	
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+.Checkout_register_list:nth-child(7){
+	@include text_style(#b3b2b2, "Lato", 13px, 400, normal, normal, 20px, left, normal);	
+	list-style-type: none;
+	margin-bottom: 33px;
+}
+
+.Checkout_register_list:nth-child(8){
+	@include text_style(#b3b2b2, "Lato", 13px, 400, normal, normal, 20px, left, normal);	
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+.Checkout_register_list:nth-child(9){
+	@include text_style(#b3b2b2, "Lato", 13px, 400, normal, normal, 20px, left, normal);	
+	list-style-type: none;
+	margin-bottom: 38px;
+}
+
+.Checkout_register_list:nth-child(8)::before, .Checkout_register_list:nth-child(9)::before{
+	content: ">>";
+	margin-right: 5px;
+}
+
+.Checkout_register_list:nth-child(10){
+	list-style-type: none;
+
+}
+
+.Button_continue{
+	width: 180px;
+	height: 50px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	@include text_style(#4a4a4a, "Lato", 16px, 700, normal, normal, normal, center, uppercase);
+}
+
+.Button_continue:hover{
+	color: $Color_pink;
+	border-color: $Color_pink;
+}
+
+.Checkout_number:nth-child(1){
+	display: flex;
+}
+
+.Checkout_new_register{
+	margin-left: $Width_checkout_new_register;
+}
+
+.Checkout_new_register_list{
+	list-style-type: none;
+}
+
+.Checkout_new_register_list:nth-child(1){
+	@include text_style(#222222, "Lato", 13px, 400, normal, normal, normal, left, uppercase);	
+	margin-bottom: 15px;	
+}
+
+.Checkout_new_register_list:nth-child(2){
+	@include text_style(#b3b2b2, "Lato", 13px, 400, normal, normal, 20px, left, normal);	
+	margin-bottom: 27px;	
+}
+
+.Checkout_new_register_list:nth-child(3), .Checkout_new_register_list:nth-child(4){
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 23px;
+}
+
+.Input_email_text, .Input_password_text{
+	@include text_style(#222222, "Lato", 12px, 400, normal, normal, normal, left, uppercase);
+	margin-bottom: 16px;
+} 
+
+.Input_email_text::after, .Input_password_text::after{
+	content: "*";
+	color: #ff0d0d;
+} 
+
+.Input_email_form, .Input_password_form{
+	width: 390px;
+	height: 45px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+}
+
+.Checkout_new_register_list:nth-child(5){
+	@include text_style(#ff0d0d, "Lato", 13px, 400, normal, normal, 20px, left, normal);
+	margin-bottom: 32px;
+}
+
+.Checkout_new_register_list:nth-child(5)::before{
+	content: "*";
+	color: #ff0d0d;
+}
+
+@import "footer_style";
+.submit_button{
+	height: 45px;
+}

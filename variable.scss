@@ -14,6 +14,10 @@ $Width_adress_discount_output: $Width_container*0.311;
 
 $Width_checkout_output: $Width_container*0.316;
 
+//Checkout_form
+
+$Width_checkout_new_register: $Width_container*0.25;
+
 @mixin text_style($Co, $FF, $FS, $FW, $FSt, $LS, $LH, $TA, $TT){
 	color: $Co;
 	font-family: $FF;

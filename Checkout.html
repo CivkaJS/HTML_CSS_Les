@@ -8,7 +8,8 @@
 	<title>Document</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="style_shoping_cart.css">
+
+	<link rel="stylesheet" href="style_checkout.css">
 </head>
 
 <body>
@@ -490,181 +491,53 @@
 			</nav>
 		</div>
 	</div>
-	<div class="add_catalog_item_form container">
-		<ul class="header_add_catalog_item">
-			<li class="style_header_add_catalog_item">Product Details</li>
-			<li class="style_header_add_catalog_item center">unite Price</li>
-			<li class="style_header_add_catalog_item center">Quantity</li>
-			<li class="style_header_add_catalog_item center">shipping</li>
-			<li class="style_header_add_catalog_item center">Subtotal</li>
-			<li class="style_header_add_catalog_item center">ACTION</li>
-		</ul>
-		<hr>
-		<ul class="Num_add_catalog_item_form">
-			<li class="Num_add_catalog_item">
-				<ul class="add_catalog_item">
-					<li class="style_header_add_catalog_item">
-						<div class="img_add_catalog_item">
-							<img src="img/SC_1.png" alt="item_1">
-						</div>
-						<ul class="form_img_info_add_catalog_item">
-							<li class="info_add_catalog_item">
-								<p>Mango People T-shirt</p>
-							</li>
-							<li class="info_add_catalog_item">
-								<ul class="form_param_info_add_catalog_item">
-									<li class="param_info_add_catalog_item">Color:</li>
-									<li class="param_info_add_catalog_item">Size:</li>
-								</ul>
-							</li>
-						</ul>
+	<div class="Checkout_form container">
+		<ol class="Checkout_box">
+			<li class="Checkout_number">
+				<ul class="Checkout_register">
+					<li class="Checkout_register_list">Shipping Adress</li>
+					<li class="Checkout_register_list">Check as a guest or register</li>
+					<li class="Checkout_register_list">Register with us for future convenience</li>
+					<li class="Checkout_register_list">
+						<input type="radio" id="chose" name="checkout as guest">
+						<label class="RadioBox_style" for="checkout as guest">checkout as guest</label>
 					</li>
-					<li class="style_header_add_catalog_item center">150$</li>
-					<li class="style_header_add_catalog_item center">
-						<input class="QUANTITY_option" type="number" placeholder="2">
+					<li class="Checkout_register_list">
+						<input type="radio" id="chose" name="register" checked>
+						<label class="RadioBox_style" for="register">checkout as guest</label>
 					</li>
-					<li class="style_header_add_catalog_item center">FREE</li>
-					<li class="style_header_add_catalog_item center">300$</li>
-					<li class="style_header_add_catalog_item center">
-						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					<li class="Checkout_register_list">register and save time!</li>
+					<li class="Checkout_register_list">Register with us for future convenience</li>
+					<li class="Checkout_register_list">Fast and easy checkout</li>
+					<li class="Checkout_register_list">Easy access to your order history and status</li>
+					<li class="Checkout_register_list">
+						<input class="Button_continue" type="button" value="Continue">
 					</li>
 				</ul>
-				<hr>
-			</li>
-			<li class="Num_add_catalog_item">
-				<ul class="add_catalog_item">
-					<li class="style_header_add_catalog_item">
-						<div class="img_add_catalog_item">
-							<img src="img/SC_2.png" alt="item_1">
-						</div>
-						<ul class="form_img_info_add_catalog_item">
-							<li class="info_add_catalog_item">
-								<p>Mango People T-shirt</p>
-							</li>
-							<li class="info_add_catalog_item">
-								<ul class="form_param_info_add_catalog_item">
-									<li class="param_info_add_catalog_item">Color:</li>
-									<li class="param_info_add_catalog_item">Size:</li>
-								</ul>
-							</li>
-						</ul>
+				<ul class="Checkout_new_register">
+					<li class="Checkout_new_register_list">Already registed?</li>
+					<li class="Checkout_new_register_list">Please log in below</li>
+					<li class="Checkout_new_register_list">
+						<label class="Input_email_text" for="Input_email">EMAIL ADDRESS</label>
+						<input class="Input_email_form" type="email" id="id_email" name="Input_email">
 					</li>
-					<li class="style_header_add_catalog_item center">150$</li>
-					<li class="style_header_add_catalog_item center">
-						<input class="QUANTITY_option" type="number" placeholder="2">
+					<li class="Checkout_new_register_list">
+						<label class="Input_password_text" for="Input_password">PASSWORD</label>
+						<input class="Input_password_form" type="password" id="id_password" name="Input_password">
 					</li>
-					<li class="style_header_add_catalog_item center">FREE</li>
-					<li class="style_header_add_catalog_item center">300$</li>
-					<li class="style_header_add_catalog_item center">
-						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
+					<li class="Checkout_new_register_list">Required Fileds</li>
+					<li class="Checkout_new_register_list">
+						<input class="Button_continue" type="button" value="Log in">
+						<a class="Fogot_password_style" href="#">Forgot Password ?</a>
 					</li>
 				</ul>
-				<hr>
 			</li>
-			<li class="Num_add_catalog_item">
-				<ul class="add_catalog_item">
-					<li class="style_header_add_catalog_item">
-						<div class="img_add_catalog_item">
-							<img src="img/SC_3.png" alt="item_1">
-						</div>
-						<ul class="form_img_info_add_catalog_item">
-							<li class="info_add_catalog_item">
-								<p>Mango People T-shirt</p>
-							</li>
-							<li class="info_add_catalog_item">
-								<ul class="form_param_info_add_catalog_item">
-									<li class="param_info_add_catalog_item">Color:</li>
-									<li class="param_info_add_catalog_item">Size:</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="style_header_add_catalog_item center">150$</li>
-					<li class="style_header_add_catalog_item center">
-						<input class="QUANTITY_option" type="number" placeholder="2">
-					</li>
-					<li class="style_header_add_catalog_item center">FREE</li>
-					<li class="style_header_add_catalog_item center">300$</li>
-					<li class="style_header_add_catalog_item center">
-						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
-					</li>
-				</ul>
-				<hr>
-			</li>
-			<li class="Num_add_catalog_item">
-				<ul class="add_catalog_item">
-					<li class="style_header_add_catalog_item">
-						<div class="img_add_catalog_item">
-							<img src="img/SC_3.png" alt="item_1">
-						</div>
-						<ul class="form_img_info_add_catalog_item">
-							<li class="info_add_catalog_item">
-								<p>Mango People T-shirt</p>
-							</li>
-							<li class="info_add_catalog_item">
-								<ul class="form_param_info_add_catalog_item">
-									<li class="param_info_add_catalog_item">Color:</li>
-									<li class="param_info_add_catalog_item">Size:</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="style_header_add_catalog_item center">150$</li>
-					<li class="style_header_add_catalog_item center">
-						<input class="QUANTITY_option" type="number" placeholder="2">
-					</li>
-					<li class="style_header_add_catalog_item center">FREE</li>
-					<li class="style_header_add_catalog_item center">300$</li>
-					<li class="style_header_add_catalog_item center">
-						<input type="image" src="img/SC_button.png" alt="Кнопка Delete">
-					</li>
-				</ul>
-				<hr>
-				<input class="Button_add_catalog_clear" type="button" alt="Clear" value="cLEAR SHOPPING CART">
-				<input class="Button_add_catalog_continue" type="button" alt="continue" value="cONTINUE sHOPPING">
-			</li>
-		</ul>
-	</div>
-	<div class="output_info_result container">
-		<div class="Output_registration_form center">
-
-			<form action="#" class="adress_output_registration_form">
-				<p class="header_output_registration">Shipping Adress</p>
-				<select class="country_chose_adress_output_registration">
-					<option selected>Bangladesh</option>
-					<option value="1">India</option>
-					<option value="2">Nepal</option>
-					<option value="3">Myanmar</option>
-				</select>
-				<input class="state_chose_output_registration" type="text" placeholder="State">
-				<input class="postcode_chose_output_registration" type="text" placeholder="Postcode / Zip">
-				<input class="Button_adress_output_registration" type="button" alt="get a quote" value="get a quote">
-			</form>
-			<form action="#" class="discount_output_registration_form">
-				<p class="header_output_registration">coupon discount</p>
-				<p class="over_info_discount_output_registration">Enter your coupon code if you have one</p>
-				<input class="state_chose_output_registration" type="text" placeholder="State">
-				<input class="Button_discount_output_registration" type="button" alt="Apply coupon"
-					value="Apply coupon">
-			</form>
-			<div class="result_output_registration_form center">
-				<form action="#">
-					<ul class="info_result_checkout">
-						<li class="list_info_result_checkout">Sub tota</li>
-						<li class="list_info_result_checkout">GRAND TOTAL</li>
-						<li class="list_info_result_checkout">
-							<hr>
-						</li>
-						<li class="list_info_result_checkout">
-							<a href="Checkout.html">
-								<input class="Button_result_output_registration" type="button" alt="proceed to checkout"
-									value="proceed to checkout">
-							</a>
-						</li>
-					</ul>
-				</form>
-			</div>
-		</div>
+			<li class="Checkout_number">BILLING INFORMATION</li>
+			<li class="Checkout_number">SHIPPING INFORMATION</li>
+			<li class="Checkout_number">SHIPPING METHOD</li>
+			<li class="Checkout_number">PAYMENT METHOD</li>
+			<li class="Checkout_number">ORDER REVIEW</li>
+		</ol>
 	</div>
 	<div class="conclusion_bgc">
 		<div class="container container_fixed_img">
@@ -777,6 +650,7 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 
 </html>
