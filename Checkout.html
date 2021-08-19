@@ -110,10 +110,12 @@
 								<p class="cash_result_info">TOTAL</p>
 								<p class="cash_result_info"> $500.00</p>
 							</div>
-							<div class="Check_cash_items">
+							<a style="display: block;" href="Checkout.html">
 								<input type="button" value="Checkout" class="Check_cash_items center">
+							</a>
+							<a style="display: block;" href="Shoping_cart.html">
 								<input type="button" value="Go to cart" class="Check_cash_items center">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -492,52 +494,105 @@
 		</div>
 	</div>
 	<div class="Checkout_form container">
-		<ol class="Checkout_box">
-			<li class="Checkout_number">
-				<ul class="Checkout_register">
-					<li class="Checkout_register_list">Shipping Adress</li>
-					<li class="Checkout_register_list">Check as a guest or register</li>
-					<li class="Checkout_register_list">Register with us for future convenience</li>
-					<li class="Checkout_register_list">
-						<input type="radio" id="chose" name="checkout as guest">
-						<label class="RadioBox_style" for="checkout as guest">checkout as guest</label>
-					</li>
-					<li class="Checkout_register_list">
-						<input type="radio" id="chose" name="register" checked>
-						<label class="RadioBox_style" for="register">checkout as guest</label>
-					</li>
-					<li class="Checkout_register_list">register and save time!</li>
-					<li class="Checkout_register_list">Register with us for future convenience</li>
-					<li class="Checkout_register_list">Fast and easy checkout</li>
-					<li class="Checkout_register_list">Easy access to your order history and status</li>
-					<li class="Checkout_register_list">
-						<input class="Button_continue" type="button" value="Continue">
-					</li>
-				</ul>
-				<ul class="Checkout_new_register">
-					<li class="Checkout_new_register_list">Already registed?</li>
-					<li class="Checkout_new_register_list">Please log in below</li>
-					<li class="Checkout_new_register_list">
-						<label class="Input_email_text" for="Input_email">EMAIL ADDRESS</label>
-						<input class="Input_email_form" type="email" id="id_email" name="Input_email">
-					</li>
-					<li class="Checkout_new_register_list">
-						<label class="Input_password_text" for="Input_password">PASSWORD</label>
-						<input class="Input_password_form" type="password" id="id_password" name="Input_password">
-					</li>
-					<li class="Checkout_new_register_list">Required Fileds</li>
-					<li class="Checkout_new_register_list">
-						<input class="Button_continue" type="button" value="Log in">
-						<a class="Fogot_password_style" href="#">Forgot Password ?</a>
-					</li>
-				</ul>
-			</li>
-			<li class="Checkout_number">BILLING INFORMATION</li>
-			<li class="Checkout_number">SHIPPING INFORMATION</li>
-			<li class="Checkout_number">SHIPPING METHOD</li>
-			<li class="Checkout_number">PAYMENT METHOD</li>
-			<li class="Checkout_number">ORDER REVIEW</li>
-		</ol>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_01">Shipping Adress</summary>
+				<div class="Checkout_info_box">
+					<form action="#">
+						<ul class="Checkout_register">
+							<li class="Checkout_register_list">Check as a guest or register</li>
+							<li class="Checkout_register_list">Register with us for future convenience</li>
+							<li class="Checkout_register_list">
+								<input type="checkbox" id="chose" name="checkout as guest">
+								<label class="RadioBox_style" for="checkout as guest">checkout as guest</label>
+							</li>
+							<li class="Checkout_register_list">
+								<input type="checkbox" id="chose" name="register" checked>
+								<label class="RadioBox_style" for="register">register</label>
+							</li>
+							<li class="Checkout_register_list">register and save time!</li>
+							<li class="Checkout_register_list">Register with us for future convenience</li>
+							<li class="Checkout_register_list">Fast and easy checkout</li>
+							<li class="Checkout_register_list">Easy access to your order history and status</li>
+							<li class="Checkout_register_list">
+								<input class="Button_continue" type="button" value="Continue">
+							</li>
+						</ul>
+					</form>
+					<form action="#">
+						<ul class="Checkout_new_register">
+							<li class="Checkout_new_register_list">Already registed?</li>
+							<li class="Checkout_new_register_list">Please log in below</li>
+							<li class="Checkout_new_register_list">
+								<label class="Input_email_text" for="Input_email">EMAIL ADDRESS</label>
+								<input class="Input_email_form" type="email" id="id_email" name="Input_email">
+							</li>
+							<li class="Checkout_new_register_list">
+								<label class="Input_password_text" for="Input_password">PASSWORD</label>
+								<input class="Input_password_form" type="password" id="id_password"
+									name="Input_password">
+							</li>
+							<li class="Checkout_new_register_list">Required Fileds</li>
+							<li class="Checkout_new_register_list">
+								<input class="Button_continue" type="button" value="Log in">
+								<a class="Fogot_password_style" href="#">Forgot Password ?</a>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</details>
+			<div style="border: 1px solid #ebebeb; top: 49px;width: 100%;"></div>
+		</div>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_02">BILLING INFORMATION</summary>
+				<p style="margin-bottom: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eum quam
+					necessitatibus officiis modi
+					rem praesentium dignissimos aperiam numquam laborum et impedit veritatis atque ex natus iusto fuga
+					debitis aliquid eos, a aspernatur! Reiciendis ipsam ad odio iusto id.</p>
+			</details>
+			<div style="border: 1px solid #ebebeb; width: 100%;"></div>
+		</div>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_03">SHIPPING INFORMATION</summary>
+				<p style="margin-bottom: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eum quam
+					necessitatibus officiis modi
+					rem praesentium dignissimos aperiam numquam laborum et impedit veritatis atque ex natus iusto fuga
+					debitis aliquid eos, a aspernatur! Reiciendis ipsam ad odio iusto id.</p>
+			</details>
+			<div style="border: 1px solid #ebebeb; width: 100%;"></div>
+		</div>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_04">SHIPPING METHOD</summary>
+				<p style="margin-bottom: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eum quam
+					necessitatibus officiis modi
+					rem praesentium dignissimos aperiam numquam laborum et impedit veritatis atque ex natus iusto fuga
+					debitis aliquid eos, a aspernatur! Reiciendis ipsam ad odio iusto id.</p>
+			</details>
+			<div style="border: 1px solid #ebebeb; width: 100%;"></div>
+		</div>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_05">PAYMENT METHOD</summary>
+				<p style="margin-bottom: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eum quam
+					necessitatibus officiis modi
+					rem praesentium dignissimos aperiam numquam laborum et impedit veritatis atque ex natus iusto fuga
+					debitis aliquid eos, a aspernatur! Reiciendis ipsam ad odio iusto id.</p>
+			</details>
+			<div style="border: 1px solid #ebebeb; width: 100%;"></div>
+		</div>
+		<div class="box_product_select">
+			<details class="Checkout_box">
+				<summary class="Checkout_box_name .Number_before_06">ORDER REVIEW</summary>
+				<p style="margin-bottom: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eum quam
+					necessitatibus officiis modi
+					rem praesentium dignissimos aperiam numquam laborum et impedit veritatis atque ex natus iusto fuga
+					debitis aliquid eos, a aspernatur! Reiciendis ipsam ad odio iusto id.</p>
+			</details>
+			<div style="border: 1px solid #ebebeb; width: 100%;"></div>
+		</div>
 	</div>
 	<div class="conclusion_bgc">
 		<div class="container container_fixed_img">
@@ -563,9 +618,11 @@
 							<p class="bottom_conclusion_info"> FOR OUR NEWLETTER AND PROMOTION</p>
 						</div>
 						<form action="#">
-							<div class="submit_input_form">
+							<div class="submit-input-form">
 								<input class="Line_submit" type="email" placeholder="Enter Your Email">
-								<input class="submit_button" type="button" value="Subscribe">
+								<input
+									class="submit_button submit-input-form__button-position submit-input-form_pink submit-input-form_hover_white"
+									type="button" value="Subscribe">
 							</div>
 						</form>
 					</div>

@@ -303,7 +303,7 @@
 .Form_button_view_all {
     position: absolute;
     right: 0px;
-    bottom: -100px;
+    bottom: -100px;    
 }
 
 .Button_view_all {
@@ -319,6 +319,7 @@
     letter-spacing: normal;
     line-height: 26px;
     text-align: left;
+    transition: color 200ms linear, border-color 1s linear;
 }
 
 .Button_view_all:hover {
@@ -351,6 +352,20 @@
     width: 341px;
 }
 
+.Bonus_info_top{
+    color: white;
+}
+
+.free_delivery_info_prod:hover .Bonus_info_top,
+.free_delivery_info_prod:hover .Bonus_info_bottom_prod,
+.sales_discount_info_prod:hover .Bonus_info_top,
+.sales_discount_info_prod:hover .Bonus_info_bottom_prod,
+.quality_assurance_info_prod:hover .Bonus_info_top,
+.quality_assurance_info_prod:hover .Bonus_info_bottom_prod {
+  color: $Color_pink;
+  transition: color 1s;
+}
+
 .box_info_bonus {
     display: flex;
     flex-direction: column;
@@ -370,7 +385,15 @@
 
 .img_info_bonus_prod {
     margin-bottom: 23px;
+    height: 40px;
+    transition: all 1s;
 }
+
+.free_delivery_info_prod:hover .img_info_bonus_prod,
+.sales_discount_info_prod:hover .img_info_bonus_prod,
+.quality_assurance_info_prod:hover .img_info_bonus_prod{
+  transform: rotate(360deg);
+}  
 
 @import "footer_style";
 
