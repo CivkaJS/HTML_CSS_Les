@@ -1,3 +1,5 @@
+@import "variable";
+
 .conclusion_bgc {
     background-color: #ebebeb;
     height: 438px;
@@ -119,26 +121,43 @@
     line-height: 24px;
     margin-bottom: 35px;
   }
-  
-  .submit_input_form {
-    position: relative;
-  }
-  
-  .Line_submit {
-    width: 334px;
-    height: 46px;
-    border-radius: 23px;
-    background-color: #e1e1e1;
-  }
-  
+
   .submit_button {
     width: 104px;
     height: 50px;
     border-radius: 0 23px 23px 0;
-    background-color: #f16d7f;
+    // background-color: #f16d7f;
     position: absolute;
-    right: 0px;
-    top: 1px;
+    // right: 0px;
+    // top: 0px;
+  }
+  
+  .submit-input-form {
+    //БЭМ!!!!!!
+    position: relative;
+
+    .Line_submit {
+      width: 334px;
+      height: 46px;
+      border-radius: 23px;
+      background-color: #e1e1e1;
+      padding-left: 15px;
+    }
+
+    &__button-position{
+      right: 0px;
+      top: 0px;
+    }
+
+    &_pink{
+      background-color: $Color_pink;
+      transition: all 200ms linear;
+    }
+
+    &_hover_white:hover{
+      color: $Color_pink;
+      background-color: inherit;
+    }
   }
   
   .footer {

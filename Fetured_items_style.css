@@ -1,3 +1,7 @@
+.bootstrap_padding_none {
+  padding: 0;
+}
+
 .Fetured_Items_Form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +76,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   text-decoration: none;
-  position: relative;
 }
 
 .Cash_item_info_top {
@@ -127,12 +130,17 @@
           box-sizing: border-box;
 }
 
-.Link_cash_items:hover .Link_logo_cash {
+.Cash_items_dark_form {
+  position: relative;
+  display: block;
+}
+
+.Cash_items_dark_form:hover .Link_logo_cash {
   -webkit-filter: brightness(30%);
           filter: brightness(30%);
 }
 
-.Link_cash_items:hover .add_to_cart_form {
+.Cash_items_dark_form:hover .add_to_cart_form {
   position: absolute;
   width: 123px;
   height: 39px;
@@ -142,6 +150,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .add_to_cart_form {
@@ -171,12 +181,15 @@
 .add_to_cart_form:hover {
   -webkit-box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
           box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .Button_cash_item {
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
+  border-color: #f16d7f;
   color: #ffffff;
   font-family: Lato;
   font-size: 16px;
@@ -184,9 +197,12 @@
   line-height: 48px;
   letter-spacing: 0.4px;
   margin-bottom: 113px;
+  -webkit-transition: background-color 0.7s linear, color 100ms linear;
+  transition: background-color 0.7s linear, color 100ms linear;
 }
 
 .Button_cash_item:hover {
-  border: none;
+  background-color: #ffffff;
+  color: #f16d7f;
 }
 /*# sourceMappingURL=Fetured_items_style.css.map */

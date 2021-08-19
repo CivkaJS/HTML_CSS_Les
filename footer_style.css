@@ -1,3 +1,7 @@
+.bootstrap_padding_none {
+  padding: 0;
+}
+
 .conclusion_bgc {
   background-color: #ebebeb;
   height: 438px;
@@ -120,25 +124,39 @@
   margin-bottom: 35px;
 }
 
-.submit_input_form {
-  position: relative;
-}
-
-.Line_submit {
-  width: 334px;
-  height: 46px;
-  border-radius: 23px;
-  background-color: #e1e1e1;
-}
-
 .submit_button {
   width: 104px;
   height: 50px;
   border-radius: 0 23px 23px 0;
-  background-color: #f16d7f;
   position: absolute;
+}
+
+.submit-input-form {
+  position: relative;
+}
+
+.submit-input-form .Line_submit {
+  width: 334px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #e1e1e1;
+  padding-left: 15px;
+}
+
+.submit-input-form__button-position {
   right: 0px;
-  top: 1px;
+  top: 0px;
+}
+
+.submit-input-form_pink {
+  background-color: #f16d7f;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.submit-input-form_hover_white:hover {
+  color: #f16d7f;
+  background-color: inherit;
 }
 
 .footer {

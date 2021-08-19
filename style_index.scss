@@ -104,6 +104,8 @@
   .Lable_Kids {
     position: absolute;
     top: 26px;
+    display:block;
+    transition: all 1s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,6 +115,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .Link_visual_categories:hover .Lable_Man,.Link_visual_categories:hover .Lable_Accesories, .Link_visual_categories:hover .Lable_Woman, .Link_visual_categories:hover .Lable_Kids{
+    transform: translateY(20px);
   }
   
   .Lable_Man {
@@ -236,11 +242,31 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  
+
+  .free_delivery_info:hover .Bonus_info_top,
+  .free_delivery_info:hover .Bonus_info_bottom,
+  .sales_discount_info:hover .Bonus_info_top,
+  .sales_discount_info:hover .Bonus_info_bottom,
+  .quality_assurance_info:hover .Bonus_info_top,
+  .quality_assurance_info:hover .Bonus_info_bottom {
+    color: $Color_pink;
+    transition: color 1s;
+  }
+
   .img_bonus {
     position: relative;
+    transition: all 1s;
     left: -32px;
+    height: 40px;
   }
+
+  .free_delivery_info:hover .img_bonus,
+  .sales_discount_info:hover .img_bonus,
+  .quality_assurance_info:hover .img_bonus {
+    transform: rotate(360deg);
+  }  
+  
+
   
   .Bonus_info_top {
     color: #fbfbfb;
@@ -261,4 +287,3 @@
   }
 
   @import "footer_style";
-  /*# sourceMappingURL=style_index.css.map */

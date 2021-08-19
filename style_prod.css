@@ -114,7 +114,7 @@ summary::-webkit-details-marker {
 
 .Button_browes_open {
   position: absolute;
-  width: 262px;
+  width: 267px;
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid gray;
@@ -130,6 +130,7 @@ summary::-webkit-details-marker {
   padding-top: 19px;
   padding-bottom: 22px;
   top: 55px;
+  left: -4px;
   z-index: 1;
 }
 
@@ -212,7 +213,7 @@ summary::-webkit-details-marker {
 
 .Check_cash_items {
   width: 100%;
-  height: 100px;
+  height: 50px;
   border-radius: 5px;
   background-color: #ffffff;
   margin-top: 11px;
@@ -504,6 +505,10 @@ summary::-webkit-details-marker {
   color: deeppink;
 }
 
+.bootstrap_padding_none, .heading, .categories, .bread_crumbs, .product_select_form, .Sale_catalog_items_prod {
+  padding: 0;
+}
+
 /* CSS bread_crumbs_bgc */
 .bread_crumbs_bgc {
   background-color: #f8f3f4;
@@ -559,6 +564,10 @@ summary::-webkit-details-marker {
 }
 
 /* CSS product_select_form */
+.bootstrap_padding_none, .heading, .categories, .bread_crumbs, .product_select_form, .Sale_catalog_items_prod {
+  padding: 0;
+}
+
 .Fetured_Items_Form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -633,7 +642,6 @@ summary::-webkit-details-marker {
   -ms-flex-direction: column;
   flex-direction: column;
   text-decoration: none;
-  position: relative;
 }
 
 .Cash_item_info_top {
@@ -688,12 +696,17 @@ summary::-webkit-details-marker {
           box-sizing: border-box;
 }
 
-.Link_cash_items:hover .Link_logo_cash {
+.Cash_items_dark_form {
+  position: relative;
+  display: block;
+}
+
+.Cash_items_dark_form:hover .Link_logo_cash {
   -webkit-filter: brightness(30%);
           filter: brightness(30%);
 }
 
-.Link_cash_items:hover .add_to_cart_form {
+.Cash_items_dark_form:hover .add_to_cart_form {
   position: absolute;
   width: 123px;
   height: 39px;
@@ -703,6 +716,8 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .add_to_cart_form {
@@ -732,12 +747,15 @@ summary::-webkit-details-marker {
 .add_to_cart_form:hover {
   -webkit-box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
           box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .Button_cash_item {
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
+  border-color: #f16d7f;
   color: #ffffff;
   font-family: Lato;
   font-size: 16px;
@@ -745,10 +763,13 @@ summary::-webkit-details-marker {
   line-height: 48px;
   letter-spacing: 0.4px;
   margin-bottom: 113px;
+  -webkit-transition: background-color 0.7s linear, color 100ms linear;
+  transition: background-color 0.7s linear, color 100ms linear;
 }
 
 .Button_cash_item:hover {
-  border: none;
+  background-color: #ffffff;
+  color: #f16d7f;
 }
 
 /* Menu_product_select */
@@ -1087,6 +1108,8 @@ summary::-webkit-details-marker {
   letter-spacing: normal;
   line-height: 26px;
   text-align: left;
+  -webkit-transition: color 200ms linear, border-color 1s linear;
+  transition: color 200ms linear, border-color 1s linear;
 }
 
 .Button_view_all:hover {
@@ -1129,6 +1152,21 @@ summary::-webkit-details-marker {
   width: 341px;
 }
 
+.Bonus_info_top {
+  color: white;
+}
+
+.free_delivery_info_prod:hover .Bonus_info_top,
+.free_delivery_info_prod:hover .Bonus_info_bottom_prod,
+.sales_discount_info_prod:hover .Bonus_info_top,
+.sales_discount_info_prod:hover .Bonus_info_bottom_prod,
+.quality_assurance_info_prod:hover .Bonus_info_top,
+.quality_assurance_info_prod:hover .Bonus_info_bottom_prod {
+  color: #f16d7f;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
 .box_info_bonus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1155,6 +1193,20 @@ summary::-webkit-details-marker {
 
 .img_info_bonus_prod {
   margin-bottom: 23px;
+  height: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.free_delivery_info_prod:hover .img_info_bonus_prod,
+.sales_discount_info_prod:hover .img_info_bonus_prod,
+.quality_assurance_info_prod:hover .img_info_bonus_prod {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.bootstrap_padding_none, .heading, .categories, .bread_crumbs, .product_select_form, .Sale_catalog_items_prod {
+  padding: 0;
 }
 
 .conclusion_bgc {
@@ -1279,25 +1331,39 @@ summary::-webkit-details-marker {
   margin-bottom: 35px;
 }
 
-.submit_input_form {
-  position: relative;
-}
-
-.Line_submit {
-  width: 334px;
-  height: 46px;
-  border-radius: 23px;
-  background-color: #e1e1e1;
-}
-
 .submit_button {
   width: 104px;
   height: 50px;
   border-radius: 0 23px 23px 0;
-  background-color: #f16d7f;
   position: absolute;
+}
+
+.submit-input-form {
+  position: relative;
+}
+
+.submit-input-form .Line_submit {
+  width: 334px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #e1e1e1;
+  padding-left: 15px;
+}
+
+.submit-input-form__button-position {
   right: 0px;
-  top: 1px;
+  top: 0px;
+}
+
+.submit-input-form_pink {
+  background-color: #f16d7f;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.submit-input-form_hover_white:hover {
+  color: #f16d7f;
+  background-color: inherit;
 }
 
 .footer {

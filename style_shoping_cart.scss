@@ -125,6 +125,7 @@
 		text-align: center;
 		text-transform: uppercase;
 		position: absolute;
+		transition: color 200ms linear, border-color 200ms linear;
 	}
 
 	.Button_add_catalog_clear:hover, .Button_add_catalog_continue:hover{
@@ -197,6 +198,7 @@
 		line-height: normal;
 		text-align: center;
 		text-transform: uppercase;
+		transition: color 200ms linear, border-color 200ms linear;
 	}
 
 	.Button_adress_output_registration{
@@ -211,6 +213,7 @@
 		text-align: center;
 		text-transform: uppercase;
 		margin-top: 2px;
+		transition: color 200ms linear, border-color 200ms linear;
 	}
 
 	.Button_adress_output_registration:hover, .Button_discount_output_registration:hover{
@@ -291,6 +294,7 @@
 		width: 273px;
 		height: 50px;
 		background-color: #f16d7f;
+		border-color: $Color_pink;
 		color: #ffffff;
 		font-family: Lato;
 		font-size: 16px;
@@ -298,6 +302,12 @@
 		text-align: center;
 		text-transform: uppercase;
 		margin-top: 17px;
+		transition: color 200ms linear, background-color 200ms linear;
+	}
+
+	.Button_result_output_registration:hover{
+		color: $Color_pink;
+		background-color: #ffffff;
 	}
 
 

@@ -1,3 +1,7 @@
+.bootstrap_padding_none, .bread_crumbs {
+  padding: 0;
+}
+
 /* CSS bread_crumbs_bgc */
 .bread_crumbs_bgc {
   background-color: #f8f3f4;
@@ -28,8 +32,8 @@
   text-transform: uppercase;
 }
 
-.link_breadcrumbs {
-  text-decoration: none;
+.breadcrumb .link_breadcrumbs {
+  color: black;
 }
 
 .brad_crumbs_map {

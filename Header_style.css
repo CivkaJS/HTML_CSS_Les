@@ -100,7 +100,7 @@ summary::-webkit-details-marker {
 
 .Button_browes_open {
   position: absolute;
-  width: 262px;
+  width: 267px;
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid gray;
@@ -116,6 +116,7 @@ summary::-webkit-details-marker {
   padding-top: 19px;
   padding-bottom: 22px;
   top: 55px;
+  left: -4px;
   z-index: 1;
 }
 
@@ -198,7 +199,7 @@ summary::-webkit-details-marker {
 
 .Check_cash_items {
   width: 100%;
-  height: 100px;
+  height: 50px;
   border-radius: 5px;
   background-color: #ffffff;
   margin-top: 11px;
