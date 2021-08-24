@@ -46,23 +46,69 @@
     line-height: 40px;
     letter-spacing: 0.35px;
   }
+
+  .Sale_catalog_form{
+    width: 100%;
+  }
+
+  @media screen and (min-width: 835px) and (max-width: 1030px){
+    .Sale_catalog_form {
+      display: flex;
+      justify-content: center;
+    }
+  }
   
-  .Sale_catalog_items {
+  .Sale_catalog_items, .Sale_catalog_items_media_1140{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 79px;
+    // -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    margin-bottom: 32px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1030px){
+    .Sale_catalog_items {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 835px) and (max-width: 1030px){
+    .Sale_catalog_items {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1030px){
+    .Sale_catalog_items_media_1140 {
+      display: none;
+    }
+  }
+
+  .Sale_catalog_items_media_1140{
+    margin-bottom: 79px;
   }
   
   .Cash_items {
     list-style-type: none;
     margin-right: 29px;
+    width: 23%;
+  }
+
+  @media screen and (max-width: 1030px){
+    .Cash_items{
+      width: 263px;
+    }
+  }
+
+  .Fetured_img{
+    width: auto;
+    height: 100%;
   }
   
   .Link_cash_items {
@@ -104,6 +150,49 @@
   .Cash_items:nth-child(3),
   .Cash_items:nth-child(4) {
     margin-bottom: 32px;
+  }
+
+  .Cash_items:nth-child(5),
+  .Cash_items:nth-child(6),
+  .Cash_items:nth-child(7),
+  .Cash_items:nth-child(8) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1030px){
+    .Cash_items:nth-child(5),
+    .Cash_items:nth-child(6),
+    .Cash_items:nth-child(7),
+    .Cash_items:nth-child(8) {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 1030px){
+    .Cash_items:nth-child(2),
+    .Cash_items:nth-child(4),
+    .Cash_items:nth-child(6),
+    .Cash_items:nth-child(8) {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (max-width: 555px){
+    .Cash_items:nth-child(1),
+    .Cash_items:nth-child(2),
+    .Cash_items:nth-child(3),
+    .Cash_items:nth-child(4),
+    .Cash_items:nth-child(5),
+    .Cash_items:nth-child(6),
+    .Cash_items:nth-child(7) {
+      margin-right: 0px;
+      margin-bottom: 32px;
+    }
+
+    .Cash_items:nth-child(8) {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
   }
 
   .backgroundcolor_#e9e9e9 {

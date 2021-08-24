@@ -1,10 +1,22 @@
 @import "variable";
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .heading {
     height: 100px;
     @extend .bootstrap_padding_none;
   }
-  
+
   .line_control {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,14 +28,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1140px;
-  }
-  
-  .Friendly_logo {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    // width: 1140px;
   }
   
   .Logo_home_page {
@@ -31,8 +36,10 @@
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
+    margin-right: 5%;
+
   }
-  
+    
   .Logo_home_page_info {
     padding-left: 12px;
     padding-top: 10px;
@@ -40,32 +47,40 @@
     height: 19px;
     @include text_style(#222222, "Lato Light", 27px, 300, normal, 0.68px, 32px, center, uppercase);
   }
-  
+
   .Logo_home_page_info::after {
     content: "D";
     color: #f16d7f;
     font-family: "Lato - Black";
     font-weight: 400;
     letter-spacing: 0.68px;
-  }
+  }  
   
+  
+  .header_center_serch_line{
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+    padding-right: 5%;
+  }
+
   .Serch_line {
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border: 1px solid #e6e6e6;
     border-radius: 3px 0 0 3px;
     width: 403px;
-    left: 250px;
-    top: 5px;
-  }
+    height: 34px;
+  } 
   
-  .Friendly_Account {
-    position: relative;
-    padding-top: 5px;
-  }
-  
+  @media screen and (max-width: 768px){
+    .Serch_line {
+      border: none;
+      width: 32px;
+    }
+  } 
+
   .Button_brouse {
     width: 87px;
     height: auto;
@@ -85,11 +100,44 @@
     display: block;
   }
 
-  summary::-webkit-details-marker {
+  @media screen and (max-width: 768px){
+    .Button_brouse {
+      display: none; 
+    }
+  } 
+  
+  .Button_brouse_media {
+    width: 23px;
+    height: 32px;
+    position: relative;
+    display: none; 
+  }
+
+  @media screen and (max-width: 768px){
+    .Button_brouse_media {
+      display: block; 
+    }
+  } 
+
+   summary::-webkit-details-marker {
     display: none;
   }
-  
-  .Button_browes_open {
+
+  .media_menu{
+    display: flex;
+    width: 32px;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 768px){
+    .media_menu{
+      width: 130px;
+      justify-content: flex-end;
+      justify-content: space-between;
+    }
+  } 
+
+  .Button_browes_open{
     position: absolute;
     width: 267px;
     border-radius: 5px;
@@ -100,8 +148,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 19px;
@@ -111,7 +159,23 @@
     z-index: 1;
   }
 
-  .Header_brouse_catalog, .Header_brouse_catalog_1{
+  @media screen and (max-width: 768px){
+    .Button_browes_open{
+      top: 68px;
+      left: -60px;
+      width: 200px;
+    }
+  }
+        
+  .Brouse_catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+        }    .Header_brouse_catalog, .Header_brouse_catalog_1{
     color: #232323;
     font-family: Lato;
     font-size: 14px;
@@ -120,6 +184,14 @@
     text-align: left;
     text-transform: uppercase;
   }
+    
+  .line_bottom{
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+    
 
   .Header_brouse_catalog_1{
     padding-top: 30px;
@@ -134,118 +206,152 @@
     text-align: left;
     letter-spacing: 0.35px;
     text-decoration: none;
-    padding-left: 3%;
-  }
-
+    padding-left: 3%;    
+  }      
+      
   .Button_brouse_link:hover{
     color: $Color_pink;
   }
 
-  .line_bottom{
-    width: 100%;
-    border: 1px solid #e8e8e8;
-    margin-top: 10px;
-    margin-bottom: 16px;
-  }
-  
-  .button_account_open_form {
-    width: 90%;
-  }
-  
-  .center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .cash_items {
-    margin-bottom: 16px;
-  }
-  
-  .cash_result {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 19px;
-  }
-  
-  .Check_cash_items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .Check_cash_items {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    margin-top: 11px;
-  }
-  
-  .Check_cash_items:hover {
-    color: #f16d7f;
-    border-color: #f16d7f;
-  }
-  
-  .cash_result_info {
-    color: #222222;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  
-  .Brouse_catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
   .search_line {
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
     font-family: Lato;
     width: 279px;
     padding-left: 15px;
-  }
-  
+  }    
+
+  @media screen and (max-width: 768px){
+    .search_line {
+      display: none;
+    }
+  }    
+
   .search_icon_form {
     width: 38px;
   }
-
-  .store_box_form{
-    position: absolute;
-    left: -87px;
-    top: -11px;
-    width: 70px;
-    height: 70px;
+  
+  @media screen and (max-width: 768px){
+    .search_icon_form {
+      display: none;
+    }
+  } 
+ 
+  .serch_icon_form_media{
+    display: none;
   }
+
+  @media screen and (max-width: 768px){
+    .serch_icon_form_media {
+      display: block;
+    }
+  } 
+
+  .store_box_form, .store_box_form_media{
+    width: 32px;
+    height: 29px;
+    position: relative;
+    margin-left: 2%;
+  }
+
+  .Button_account_open {
+    position: absolute;
+    width: 262px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    top: 60px;
+    right: -185px;
+    display: none;
+    z-index: 1;
+    padding-top: 21px;
+    padding-bottom: 19px;
+  }
+
+  @media screen and (max-width: 768px){
+    .Button_account_open {
+      top: 70px;
+      right: 0px;
+    }
+  } 
 
   .store_box_form:hover .Button_account_open{
     display: flex;
+   }
+
+   .button_account_open_form {
+    width: 90%;
   }
+
+  .cash_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+    .Name_cash_items {
+      font-size: 12px;
+      font-weight: 700;
+      text-align: right;
+      text-transform: uppercase;
+      color: black;
+    }
+          
+    .num_cash_items {
+      color: #f16d7f;
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    
+  .cash_result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
+    margin-top: 19px;
+  }
+
+    .cash_result_info {
+      color: #222222;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+   .Check_cash_items {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      margin-top: 11px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+       -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+    }
+
+    .Check_cash_items:hover {
+      color: #f16d7f;
+      border-color: #f16d7f;
+    } 
   
-  
-  .Button_registration {
+  .Button_registration{
     width: 130px;
     height: 38px;
     background-color: #f16d7f;
@@ -256,46 +362,23 @@
     line-height: 32px;
     letter-spacing: 0.38px;
     position: relative;
+    margin-left: 2%;
   }
-  
-  .Button_account_open {
-    position: absolute;
-    width: 262px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    border: 1px solid gray;
-    top: 60px;
-    right: -145px;
+
+  @media screen and (max-width: 768px){
+    .Button_registration {
+      display: none;
+    }
+  } 
+
+  .Button_registration_media {
+    width: 23px;
+    height: 32px;
     display: none;
-    z-index: 1;
-    padding-top: 21px;
-    padding-bottom: 19px;
   }
-  
-  .cash_items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .Name_cash_items {
-    font-size: 12px;
-    font-weight: 700;
-    text-align: right;
-    text-transform: uppercase;
-    color: black;
-  }
-  
-  .num_cash_items {
-    color: #f16d7f;
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: left;
-    text-transform: uppercase;
-  }
+
+  @media screen and (max-width: 768px){
+    .Button_registration_media {
+      display: block;
+    }
+  } 

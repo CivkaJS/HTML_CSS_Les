@@ -7,7 +7,6 @@
 
 .bread_crumbs {
     height: 148px;
-    width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +25,19 @@
 }
 
 .breadcrumb{
-    .link_breadcrumbs{
-        color: black;
+    .link_breadcrumbs, .link_breadcrumbs_static{
+        @include text_style(#dad6d7, Lato, 14px, 700, normal, normal, 20px, center, uppercase);
+        text-decoration: none;
     }
+
+    .link_breadcrumbs_static{
+        color: $Color_pink;
+    }
+
+    .link_breadcrumbs:hover{
+        color: $Color_pink; 
+    }
+
 }
 
 .brad_crumbs_map {
