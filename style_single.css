@@ -618,7 +618,6 @@ summary::-webkit-details-marker {
 
 .bread_crumbs {
   height: 148px;
-  width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,8 +640,25 @@ summary::-webkit-details-marker {
   text-transform: uppercase;
 }
 
-.breadcrumb .link_breadcrumbs {
-  color: black;
+.breadcrumb .link_breadcrumbs, .breadcrumb .link_breadcrumbs_static {
+  color: #dad6d7;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.breadcrumb .link_breadcrumbs_static {
+  color: #f16d7f;
+}
+
+.breadcrumb .link_breadcrumbs:hover {
+  color: #f16d7f;
 }
 
 .brad_crumbs_map {

@@ -27,6 +27,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   margin-left: 7%;
+  position: relative;
 }
 
 .link {
