@@ -1,7 +1,7 @@
 'use strict'
 
 let arr_product = document.querySelector('.add_buckets');
-let link_product = document.querySelectorAll('.Link_cash_items');
+let product = document.querySelectorAll('.Link_cash_items');
 let struct_card_add = document.querySelector('.add_card_buckets');
 
 function Product(name, info, price, img) {
@@ -12,13 +12,9 @@ function Product(name, info, price, img) {
 
 function addBuckets(item) {
 	console.log(struct_card_add);
+
 	struct_card_add = struct_card_add.cloneNode(true);
-	// arr_product.appendChild(struct_card_add);
 	arr_product.insertAdjacentElement('beforeend', struct_card_add);
-	arr_product.insertAdjacentHTML('beforeend', `<div></div>`);
-	arr_product.insertAdjacentHTML('beforeend', `<img src="" alt="">`);
-	arr_product.insertAdjacentHTML('beforeend', `<div></div>`);
-	arr_product.insertAdjacentHTML('beforeend', `<a href="https://example.com/producs/">Подробнее</a>`);
 }
 
 function select_product(event) {
@@ -32,8 +28,18 @@ function select_product(event) {
 	addBuckets(objProduct);
 }
 
-link_product.forEach(item => {
-	item.addEventListener('click', event_item => {
-		select_product(event_item);
+function eventClickItem(event) {
+	event.addEventListener('click', event_cl => {
+		select_product(event_cl);
+		event_cl.preventDefault();
 	});
+}
+//Честно не знаю зачем, и правильно ли использовать preventDefault(). Я так понимаю, что на событие клика влияет отправка формы?
+
+product.forEach(item => {
+	eventClickItem(item);
 });
+
+// product[0].addEventListener('click', event_item => {
+// 	select_product(event_item);
+// });
