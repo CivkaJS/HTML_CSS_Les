@@ -258,7 +258,6 @@
 }
 
 .add_to_cart_form::before {
-  content: url(img/Forma_1_copy.png);
   margin-right: 7px;
 }
 

@@ -132,14 +132,16 @@ p {
 
 .Button_brouse_media {
   width: 23px;
-  height: 32px;
+  height: 50px;
   position: relative;
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .Button_brouse_media {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -155,6 +157,7 @@ summary::-webkit-details-marker {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 19px;
 }
 
 @media screen and (max-width: 768px) {
@@ -282,9 +285,24 @@ summary::-webkit-details-marker {
 
 .store_box_form, .store_box_form_media {
   width: 32px;
-  height: 29px;
+  height: 50px;
   position: relative;
   margin-left: 2%;
+}
+
+.icon_sum_buckets {
+  position: relative;
+}
+
+.sum_buckets {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: lightpink;
+  width: 25px;
+  text-align: center;
+  top: -15px;
+  left: 30px;
 }
 
 .Button_account_open {
@@ -293,18 +311,17 @@ summary::-webkit-details-marker {
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid gray;
-  top: 60px;
-  right: -185px;
+  top: 50px;
+  right: -106px;
   display: none;
   z-index: 1;
-  padding-top: 21px;
+  padding-top: 10px;
   padding-bottom: 19px;
 }
 
 @media screen and (max-width: 768px) {
   .Button_account_open {
-    top: 70px;
-    right: 0px;
+    right: -60px;
   }
 }
 
@@ -318,7 +335,7 @@ summary::-webkit-details-marker {
   width: 90%;
 }
 
-.cash_items {
+.cash_bucket_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,12 +345,13 @@ summary::-webkit-details-marker {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
+  margin-top: 10px;
 }
 
 .Name_cash_items {
   font-size: 12px;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   color: black;
 }
@@ -408,14 +426,22 @@ summary::-webkit-details-marker {
 
 .Button_registration_media {
   width: 23px;
-  height: 32px;
+  height: 50px;
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .Button_registration_media {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
+}
+
+/*Buckets*/
+.clear_buckets {
+  text-align: center;
+  font-size: 25px;
 }
 
 .bootstrap_padding_none, .heading, .categories, .bread_crumbs, .product_select_form, .Sale_catalog_items_prod, .Sale_catalog_items_prod_1, .Sale_catalog_items_prod_2 {
@@ -447,6 +473,7 @@ summary::-webkit-details-marker {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   margin-left: 7%;
+  position: relative;
 }
 
 .link {
@@ -942,7 +969,6 @@ summary::-webkit-details-marker {
 }
 
 .add_to_cart_form::before {
-  content: url(img/Forma_1_copy.png);
   margin-right: 7px;
 }
 
@@ -1054,6 +1080,7 @@ summary::-webkit-details-marker {
 .product_select {
   margin-left: 4%;
   margin-top: 71px;
+  margin-bottom: 50px;
   width: 75%;
 }
 

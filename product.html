@@ -65,7 +65,7 @@
                 </form>
 
                 <div class="media_menu">
-                    <details class="Button_brouse_media">
+                    <details class="Button_brouse_media ">
                         <summary style="text-align: center; display: block;"><img src="img/menu_black.png" alt="menu">
                         </summary>
                         <div class="Button_browes_open">
@@ -95,31 +95,36 @@
                             </div>
                         </div>
                     </details>
-                    <div class="store_box_form center">
-                        <input class="Store_box" type="image" name="Store_box" src="img/Bucket.png" alt="Bucket">
+                    <div class="store_box_form">
+                        <div class="icon_sum_buckets">
+                            <input class="Store_box" type="image" name="Store_box" src="img/Bucket.png" alt="Bucket">
+                            <div style="display: none;" class="sum_buckets"></div>
+                        </div>
                         <div class="Button_account_open center">
                             <div class="button_account_open_form">
-                                <ul style="padding: 0;">
-                                    <li>
+                                <ul class="add_buckets" style="padding: 0;">
+                                    <li class="clear_buckets" style="display:block;">Корзина пуста</li>
+                                    <li class="add_card_buckets" style="display:none;">
                                         <figure>
-                                            <figcaption class="cash_items">
+                                            <figcaption class="cash_bucket_items">
                                                 <a href="single.html">
-                                                    <img src="img/My_account_cash_men.png" alt="Cash_items">
+                                                    <img class="buckets_img_item" src="img/My_account_cash_men.png"
+                                                        alt="Cash_items" style="width: auto; height: 84px;">
                                                 </a>
-                                                <div>
+                                                <div style="width: 105px;">
                                                     <h3 class="Name_cash_items">Rebox Zane</h3>
                                                     <img src="img/star.png" alt="star">
                                                     <p class="num_cash_items">1 x $250</p>
                                                 </div>
-                                                <input style="width: 15px; height: 15px;" type="image"
-                                                    src="img/cancel.png" alt="cancel">
+                                                <input class="delete_item_buckets" style="width: 15px; height: 15px;"
+                                                    type="image" src="img/cancel.png" alt="cancel">
                                             </figcaption>
                                             <div style="width: 100%; border: 1px solid gray;"></div>
                                         </figure>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <figure class="Box_form_cash_items">
-                                            <figcaption class="cash_items">
+                                            <figcaption class="cash_bucket_items">
                                                 <a href="single.html">
                                                     <img src="img/My_account_cash_women.png" alt="Cash_items"
                                                         class="items_img_box">
@@ -134,11 +139,11 @@
                                             </figcaption>
                                             <div style="width: 100%; border: 1px solid gray;"></div>
                                         </figure>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 <div class="cash_result">
                                     <p class="cash_result_info">TOTAL</p>
-                                    <p class="cash_result_info"> $500.00</p>
+                                    <p class="cash_result_info"> $0.00</p>
                                 </div>
                                 <a style="display: block;" href="Checkout.html">
                                     <input type="button" value="Checkout" class="Check_cash_items center">
@@ -920,7 +925,6 @@
                             <span class="Cash_item_info_top">Mango People T-shirt</span>
                             <span class="Cash_item_info_bottom">$52.00</span>
                         </a>
-
                     </li>
                 </ul>
                 <ul class="Sale_catalog_items_prod_1">
@@ -1112,9 +1116,10 @@
     <div class="conclusion_bgc">
         <div class="container container_fixed_img">
             <div class="conclusion">
+                <!-- <img src="img/Sea_coclusion.png" alt="Sea"> -->
                 <div class="container biography_form">
                     <div class="biography_box">
-                        <figure class="biography_info">
+                        <figure class="biography_info center">
                             <img class="conclusion_img" src="img/Author.png" alt="Author">
                             <figcaption>
                                 <p class="biography_history">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
@@ -1132,7 +1137,7 @@
                             <h3 class="top_conclusion_info">Subscribe</h3>
                             <p class="bottom_conclusion_info"> FOR OUR NEWLETTER AND PROMOTION</p>
                         </div>
-                        <form action="#">
+                        <form class="Email_submit_form" action="#">
                             <div class="submit-input-form">
                                 <input class="Line_submit" type="email" placeholder="Enter Your Email">
                                 <input
@@ -1228,6 +1233,8 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,12 @@
 @import "container"; 
 @import "Header_style";
+
+/*Buckets*/
+.clear_buckets{
+    text-align: center;
+    font-size: 25px;
+}
+
 @import "Categories_style";
 
 
@@ -77,6 +84,7 @@
 .product_select {
     margin-left: 4%;
     margin-top: 71px;
+    margin-bottom: 50px;
     width: 75%;
 }
 
